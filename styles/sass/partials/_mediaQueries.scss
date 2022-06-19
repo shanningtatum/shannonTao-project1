@@ -1,0 +1,219 @@
+@media (max-width:1000px){
+
+    // ABOUT SECTION
+    .aboutSection .wrapper{
+        
+        .aboutImageContainer{
+            .brandingImage{
+                width:100%;
+            }
+            .circleContainer{
+                left:0;
+                top:0;
+            }
+        }
+
+    }
+
+    // GALLERY SECTION
+    .gallerySection .wrapper .galleryImageContainer img {
+        width:60%;
+    }
+
+    // SERVICES SECTION
+
+    .serviceSection{
+        .wrapper{
+            flex-basis:80%;
+            margin:0 auto;
+            .serviceList{
+
+                border:2px red solid;
+            }
+        }
+    }
+
+    // TEAM SECTION
+
+    .teamSection {
+        padding:10px;
+        .wrapper{
+            padding:0;
+            margin:10px;
+            width:calc(100% - 20px);
+            h2{
+                padding-top:100px;
+            }
+            ul{
+                // flex-direction:column;
+                padding:20px 0;
+            }
+        }
+    }
+
+    // DROP SECTION
+
+    .dropSection{
+        .wrapper{
+            .dropTextContainer{
+                flex-basis:80%;
+            }
+        }
+    }
+
+    // FOOTER
+
+    .homeFooter{
+        padding:0;
+        .contactLink{
+            padding:0;
+
+            .contactCol, .recentCol, .twitterCol{
+                padding:0;
+                margin:20px;
+            }
+        }
+    }
+
+}
+
+@media (max-width:768px){
+    // SLIDE OUT NAV
+    header .headerNavBar{
+        #openMenu, .menuButton{
+            font-size:1.5rem;
+            display:block;
+        }
+        input{
+            opacity:0;
+        }
+        .menuButton{
+            cursor:pointer;
+        }
+    }
+
+    .slideOutNav{
+        position:absolute;
+        display:block;
+        z-index:10;
+        height:100vh;
+        background-color:$lightSage;
+        padding:20px;
+        width:50%;
+        font-family:$headerFont;
+        ul{
+            list-style:none;
+
+            li{
+                a{
+                    text-decoration:none;
+                    color:$white;
+                    transition:0.3s;
+
+                    &:hover, &:focus{
+                        margin-left:10px;
+                        color:rgba($color:$black, $alpha:0.5);
+                    }
+                }
+            }
+        }
+    }
+
+    // HEADER SECTION
+    .homeHeader {
+
+        .wrapper{
+
+            .headerNavBar{
+
+                align-items:center;
+
+                h1{
+                   margin:0 auto;
+                }
+                .leftNav, .rightNav{
+                    display:none;
+                }
+            }
+
+        }
+    }
+
+
+
+    // GALLERY SECTION
+    .gallerySection .wrapper{
+        padding:20px;
+
+        .galleryImageContainer{
+            img{
+                width:40%;
+            }
+        }
+
+    }
+
+    // FOOTER
+
+    footer .contactLink nav{
+        flex-direction:column;
+
+        .contactCol, .twitterCol, .recentCol{
+            text-align:left;
+
+        }
+        .recentCol{
+            h4{
+                text-align:left;
+            }
+        }
+        .twitterCol{
+            li{
+                &:nth-child(3){
+                    justify-content:flex-start;
+                }
+            }
+
+        }
+    }
+
+}
+
+@media (max-width:600px){
+    // ABOUT SECTION
+
+
+    // SERVICES SECTION 
+    .serviceSection{
+        .wrapper{
+            margin:0 auto;
+            ul{
+
+                border:2px blue solid;
+                height:100%;
+                flex-wrap:nowrap;
+                flex-direction:column;
+
+                .serviceList{
+                    width:100%;
+                    border:2px red solid;
+
+                    i{
+                        font-size:0.7rem;
+                        width:30px;
+                        height:30px;
+                    }
+                    .serviceTextContainer{
+                        margin:0;
+                    }
+                }
+                
+            }
+
+        }
+    }
+}
+
+@media (max-width:320px){
+
+}

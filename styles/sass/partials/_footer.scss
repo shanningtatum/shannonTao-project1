@@ -1,0 +1,101 @@
+footer{
+    background-color:$black;
+    margin:0;
+    padding-top:50px;
+
+    .contactLink {
+        display:flex;
+        padding:50px 0;
+        border-bottom:2px rgba($color:$white,$alpha:0.1) solid;
+
+        nav {
+            display:flex;
+            justify-content:space-between;
+            margin:0 auto;
+
+            ul{
+                margin:0 auto;
+                padding:50px;
+            }
+        }
+        .socialLinks{
+            i{
+                margin-right:20px;
+            }
+        }
+    }
+
+    .companyFooter{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        color:$whiteTwo;
+        font-family:$bodyFont;
+        text-transform:uppercase;
+        padding:25px 0;
+    }
+
+    li, h4{
+        color:$whiteTwo;
+    }
+}
+
+.contactCol,
+.twitterCol {
+    padding:0;
+    list-style:none;
+}
+
+.contactCol a{
+    text-decoration:none;
+    color:$white;
+    transition:0.3s;
+
+    &:hover,&:focus{
+        color:rgba($color:$white, $alpha:0.6);
+    }
+}
+
+.recentCol{
+    padding:0;
+
+    li{
+        &:first-child {
+            color:$black;
+        }
+    }
+
+    h4{
+        text-align:center;
+    }
+}
+
+.twitterCol{
+    text-align:right;
+
+    li{
+        &:nth-child(3){
+            display:flex;
+            justify-content:flex-end;
+        }
+        input{
+            border:none;
+            // padding:10px 20px;
+            height:40px;
+            padding:0 20px;
+        }
+    }
+
+    button{
+        height:40px;
+        width:40px;
+        background-color:$lightSage;
+        transition:0.3s;
+
+        &:hover,&:focus{
+            background-color:rgba($color:$lightSage, $alpha:0.5);
+            color:$white;
+            
+        }
+    }
+}

@@ -1,0 +1,63 @@
+html{
+    font-size:125%;
+}
+
+
+h1, h2, h3, h4, h5{
+    color:$black;
+    font-family:$headerFont;    
+    text-transform:uppercase;
+}
+h1{
+// "CREATIVE"
+    font-size: 1.85rem;
+    letter-spacing:0.9px;
+}
+
+h2{
+    // DROP OUR LINE, MEET OUR TEAM
+    font-size:0.9rem;
+    letter-spacing:1.8px;
+    line-height:24px;
+    font-weight:normal;
+}
+h3{
+    // BRAND, DESIGN, ALL SERVICES HEADERS
+    font-size:0.8rem;
+    font-weight:normal;
+}
+h4{
+    // SUBHEADING + TEAM PLAYER
+    font-size:0.75rem;
+    font-weight:normal;
+}
+h5{
+    font-size:0.7rem;
+    letter-spacing:5px;
+    font-weight:normal;
+    color:$whiteTwo;
+}
+
+section p, footer li {
+    font-family:$bodyFont;
+    font-size:0.7rem;
+    line-height:24px;
+    letter-spacing:0.3px;
+    color:$black;
+}
+
+
+.button {
+    text-transform:uppercase;
+    color:$black;
+    text-decoration:none;
+    background-color:$white;
+    padding:10px 15px;
+    text-align:center;
+    font-family:$headerFont;
+    font-weight:bold;
+    font-size:0.7rem;
+    line-height:24px;
+    letter-spacing:0.7px;
+    border:2px $white solid;
+}

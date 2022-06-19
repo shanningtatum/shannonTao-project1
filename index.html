@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/8dadeab0df.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Creative</title>
+  </head>
+  <body>
+    <!-- SKIP NAV -->
+    <a href="#mainContent" class="skip-link">Skip to Main Content</a>
+
+    <!-- SLIDE OUT NAV -->
+
+    <div class="slideOutNav">
+      <label for="closeMenu"
+        ><i class="fa-solid fa-xmark" id="closeMenu"
+          ><span class="sr-only">Close Navigation Menu</span></i
+        ></label
+      >
+
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Search</a></li>
+          <li><a href="#">Shopping Bag</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- HEADER -->
+    <header class="homeHeader">
+      <div class="wrapper">
+        <nav class="headerNavBar">
+          <input type="checkbox" id="openMenu" />
+          <label for="openMenu" class="menuButton">
+            <i class="fa-solid fa-bars"
+              ><span class="sr-only">Open Navigation Menu</span></i
+            >
+          </label>
+          <ul class="leftNav">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="./blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="#">Portfolio</a>
+            </li>
+          </ul>
+          <h1>Creative</h1>
+          <ul class="rightNav">
+            <li>
+              <a href="#">Shop</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
+            <li>
+              <button>
+                <i class="fa-solid fa-magnifying-glass"
+                  ><span class="sr-only">Open the Search Bar</span></i
+                >
+              </button>
+            </li>
+            <li>
+              <i class="fa-solid fa-bag-shopping"
+                ><span class="sr-only">Link to Shopping Cart</span>
+                <p class="counter">0</p>
+              </i>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- HEADER ENDS -->
+    <!-- MAIN -->
+    <!-- ABOUT -->
+    <main id="mainContent" class="homeMain">
+      <section class="aboutSection">
+        <div class="wrapper">
+          <div class="aboutImageContainer">
+            <div class="brandingImage">
+              <img
+                src="/assets/home-2.jpeg"
+                alt="A desk with a Mac computer on top."
+              />
+              <div class="circleContainer">
+                <img
+                  src="./assets/home-circle-text.png"
+                  alt="Branding and Website Pros in a circle"
+                  class="brandingCircleText"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="aboutTextContainer">
+            <div class="brandContainer">
+              <h3>Branding</h3>
+              <p>
+                Venture first mover advantage incubator metrics focus backing
+                business-to-consumer.
+              </p>
+            </div>
+            <div class="designContainer">
+              <h3>Design & Develop</h3>
+              <p>
+                Venture first mover advantage incubator metrics focus backing
+                business-to-consumer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CAROUSEL -->
+      <section class="gallerySection">
+        <div class="wrapper">
+          <div class="galleryImageContainer">
+            <button>
+              <i class="fa-solid fa-angle-left"
+                ><span class="sr-only">Click for previous image</span></i
+              >
+            </button>
+            <img
+              src="/assets/home-3.jpeg"
+              alt="A magazine spread with a text and a picture of a model."
+            />
+            <button>
+              <i class="fa-solid fa-angle-right"
+                ><span class="sr-only">Click for next image</span></i
+              >
+            </button>
+          </div>
+          <div class="galleryTextContainer">
+            <p>
+              Ecosystem iPad disruptive social media low hanging fruit stealth
+              launch party handshake market branding. Pitch agile development
+              business plan stealth channels prototype mass market product
+              management value proposition startup strategy. Product management
+              early adopters user experience metrics advisor gamification
+              responsive web design hackathon termsheet backing series.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- SERVICES CONTAINER -->
+      <section class="serviceSection">
+        <div class="wrapper">
+          <ul>
+            <li class="serviceList">
+              <div class="iconContainer">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <div class="serviceTextContainer">
+                <h3>Unique Design</h3>
+                <p>
+                  Twitter validation first mover advantage advisor angel
+                  investor beta churn rate low hanging fruit burn.
+                </p>
+              </div>
+            </li>
+            <li class="serviceList">
+              <div class="iconContainer">
+                <i class="fa-solid fa-map-pin"></i>
+              </div>
+              <div class="serviceTextContainer">
+                <h3>SEO Marketing</h3>
+                <p>
+                  Twitter validation first mover advantage advisor angel
+                  investor beta churn rate low hanging fruit burn.
+                </p>
+              </div>
+            </li>
+            <li class="serviceList">
+              <div class="iconContainer">
+                <i class="fa-solid fa-display"></i>
+              </div>
+              <div class="serviceTextContainer">
+                <h3>Retina Ready</h3>
+                <p>
+                  Twitter validation first mover advantage advisor angel
+                  investor beta churn rate low hanging fruit burn.
+                </p>
+              </div>
+            </li>
+            <li class="serviceList">
+              <div class="iconContainer">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+              <div class="serviceTextContainer">
+                <h3>ECommerce Ready</h3>
+                <p>
+                  Twitter validation first mover advantage advisor angel
+                  investor beta churn rate low hanging fruit burn.
+                </p>
+              </div>
+            </li>
+            <li class="serviceList">
+              <div class="iconContainer">
+                <i class="fa-solid fa-sliders"></i>
+              </div>
+              <div class="serviceTextContainer">
+                <h3>Advanced Options</h3>
+                <p>
+                  Twitter validation first mover advantage advisor angel
+                  investor beta churn rate low hanging fruit burn.
+                </p>
+              </div>
+            </li>
+            <li class="serviceList">
+              <div class="iconContainer">
+                <i class="fa-solid fa-face-smile"></i>
+              </div>
+              <div class="serviceTextContainer">
+                <h3>Customizable</h3>
+                <p>
+                  Twitter validation first mover advantage advisor angel
+                  investor beta churn rate low hanging fruit burn.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- MEET OUR TEAM -->
+      <section class="teamSection">
+        <div class="wrapper">
+          <h2>Meet Our Team</h2>
+          <ul>
+            <li>
+              <h3>TEAM PLAYERS</h3>
+              <p>
+                Pitch client interaction design ownership disruptive leverage
+                prototype conversion. Deployment validation gen-z disruptive
+                paradigm shift churn rate niche market graphical user interface.
+              </p>
+            </li>
+            <li>
+              <img src="./assets/home-5.jpeg" alt="" />
+            </li>
+            <li>
+              <img src="./assets/home-6.jpeg" alt="" />
+            </li>
+            <li>
+              <img src="./assets/home-7.jpeg" alt="" />
+            </li>
+            <li>
+              <img src="./assets/home-8.jpeg" alt="" />
+            </li>
+            <li>
+              <img src="./assets/home-9.jpeg" alt="" />
+            </li>
+            <li>
+              <h3>WANT TO WORK WITH US!</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- DROP US A LINE -->
+      <section class="dropSection">
+        <div class="wrapper">
+          <div class="dropTextContainer">
+            <div class="innerTextContainer">
+              <h2>Drop Us A Line</h2>
+              <p>
+                Pitch client interaction design ownership disruptive leverage
+                prototype conversion. Deployment validation gen-z disruptive
+                paradigm shift churn rate niche market graphical user interface.
+              </p>
+            </div>
+
+            <a href="#" class="button">View Portfolio</a>
+          </div>
+          <div class="dropImageContainer">
+            <!-- <img
+              src="./assets/home-10.jpeg"
+              alt="An overhead shot of a desk with a phone, files, and coffee."
+            /> -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- MAIN ENDS -->
+    <!-- FOOTER -->
+    <footer class="homeFooter">
+      <div class="contactLink">
+        <nav>
+          <ul class="contactCol">
+            <li><h4>Contact Us</h4></li>
+            <li>
+              <address>6591 Orchard Street, NY 10002, United States</address>
+            </li>
+            <li>
+              Email:&nbsp;<a href="mailto:contact@onepro.co"
+                >contact@onepro.co</a
+              >
+            </li>
+            <li>
+              Phone 01:
+              <a href="tel:+00 (9) 123 3456 789">+00 (9) 123 3456 789</a>
+            </li>
+            <li>
+              Phone 02:
+              <a href="tel:+00 (9) 123 3456 788">+00 (9) 123 3456 788</a>
+            </li>
+            <li>Fax: +00 (9) 643 6543 898</li>
+            <li><br /></li>
+            <li class="socialLinks">
+              <a href="#"
+                ><i class="fa-brands fa-facebook-f" aria-hidden="true"
+                  ><span class="sr-only">Link to Facebook</span></i
+                ></a
+              >
+              <a href="#">
+                <i class="fa-brands fa-twitter" aria-hidden="true"
+                  ><span class="sr-only">Link to Twitter</span></i
+                ></a
+              >
+              <a href="#">
+                <i class="fa-brands fa-instagram" aria-hidden="true"
+                  ><span class="sr-only">Link to Instagram</span></i
+                ></a
+              >
+            </li>
+          </ul>
+          <ul class="recentCol">
+            <li><h4>Recent Posts</h4></li>
+            <li>Conversion hackathon partner</li>
+            <li>Network channels entrepreneur</li>
+            <li>Return on investment creative</li>
+            <li>Assets interaction design venture</li>
+            <li>Infographic learning curve</li>
+          </ul>
+          <ul class="twitterCol">
+            <li><h4>Twitter Widget</h4></li>
+            <li><p>Signup for emails and notifications below.</p></li>
+            <li>
+              <label for="email" class="sr-only">Enter your email</label>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                id="email"
+              /><button type="submit">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="companyFooter">
+        <h5>Creative Agency</h5>
+      </div>
+    </footer>
+  </body>
+</html>
