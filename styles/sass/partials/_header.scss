@@ -1,11 +1,11 @@
 .slideOutNav{
     position:fixed;
     z-index:10;
-    left:-580px;
+    left:-1000px;
     top:0;
     height:100vh;
     background-color:$black;
-    width:80%;
+    width:50%;
     font-family:$headerFont;
     transition: 0.3s;
 }

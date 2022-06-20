@@ -83,19 +83,20 @@
         input[type=checkbox]{
             opacity:0;
             position: absolute;
-
     
             &:checked ~ .slideOutNav{
                 left:0px;
             }
         }
         .closeMenu{
+            border:2px red solid;
             margin-top:20px;
             color:$white;
             display:flex;
             justify-content:flex-end;
             cursor:pointer;
             transition:0.3s;
+
             &:hover, &:focus{
                 margin-left:10px;
                 color:rgba($color:$lightSage, $alpha:0.5);
@@ -113,7 +114,6 @@
             ul{
                 list-style:none;
                 margin:0;
-
     
                 li{
                     a{
@@ -150,11 +150,13 @@
         .wrapper{
 
             .headerNavBar{
-
+                border:2px red solid;
                 align-items:center;
 
                 h1{
+                    border:2px red solid;
                    margin:0 auto;
+                   margin-top:20px;
                 }
                 .leftNav, .rightNav{
                     display:none;

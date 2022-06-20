@@ -331,11 +331,11 @@ img {
 .slideOutNav {
   position: fixed;
   z-index: 10;
-  left: -580px;
+  left: -1000px;
   top: 0;
   height: 100vh;
   background-color: #333;
-  width: 80%;
+  width: 50%;
   font-family: "Montserrat", sans-serif;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -895,6 +895,7 @@ footer li, footer h4 {
     left: 0px;
   }
   header .headerNavBar .closeMenu {
+    border: 2px red solid;
     margin-top: 20px;
     color: #fff;
     display: -webkit-box;
@@ -938,12 +939,15 @@ footer li, footer h4 {
   }
 
   .homeHeader .wrapper .headerNavBar {
+    border: 2px red solid;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   .homeHeader .wrapper .headerNavBar h1 {
+    border: 2px red solid;
     margin: 0 auto;
+    margin-top: 20px;
   }
   .homeHeader .wrapper .headerNavBar .leftNav, .homeHeader .wrapper .headerNavBar .rightNav {
     display: none;
