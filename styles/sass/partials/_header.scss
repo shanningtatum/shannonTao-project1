@@ -1,9 +1,13 @@
 .slideOutNav{
-    display:none;
-    ul{
-        padding:0;
-        border:2px red solid;
-    }
+    position:fixed;
+    z-index:10;
+    left:-580px;
+    top:0;
+    height:100vh;
+    background-color:$black;
+    width:80%;
+    font-family:$headerFont;
+    transition: 0.3s;
 }
 
 header{
@@ -34,6 +38,7 @@ header{
         left:0px;
     }
 }
+
 
 .leftNav, .rightNav{
     display:flex;

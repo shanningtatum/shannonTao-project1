@@ -329,11 +329,16 @@ img {
 }
 
 .slideOutNav {
-  display: none;
-}
-.slideOutNav ul {
-  padding: 0;
-  border: 2px red solid;
+  position: fixed;
+  z-index: 10;
+  left: -580px;
+  top: 0;
+  height: 100vh;
+  background-color: #333;
+  width: 80%;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 header {
@@ -882,39 +887,54 @@ footer li, footer h4 {
   }
 }
 @media (max-width: 768px) {
+  header .headerNavBar input[type=checkbox] {
+    opacity: 0;
+    position: absolute;
+  }
+  header .headerNavBar input[type=checkbox]:checked ~ .slideOutNav {
+    left: 0px;
+  }
+  header .headerNavBar .closeMenu {
+    margin-top: 20px;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  header .headerNavBar .closeMenu:hover, header .headerNavBar .closeMenu:focus {
+    margin-left: 10px;
+    color: rgba(195, 218, 183, 0.5);
+  }
+  header .headerNavBar .slideOutNav .slideMenu a {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  header .headerNavBar .slideOutNav ul {
+    list-style: none;
+    margin: 0;
+  }
+  header .headerNavBar .slideOutNav ul li a {
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: 10s;
+    transition: 10s;
+  }
+  header .headerNavBar .slideOutNav ul li a:hover, header .headerNavBar .slideOutNav ul li a:focus {
+    margin-left: 10px;
+    color: rgba(195, 218, 183, 0.5);
+  }
   header .headerNavBar #openMenu, header .headerNavBar .menuButton {
     font-size: 1.5rem;
     display: block;
   }
-  header .headerNavBar input {
-    opacity: 0;
-  }
   header .headerNavBar .menuButton {
     cursor: pointer;
-  }
-
-  .slideOutNav {
-    position: absolute;
-    display: block;
-    z-index: 10;
-    height: 100vh;
-    background-color: #C3DAB7;
-    padding: 20px;
-    width: 50%;
-    font-family: "Montserrat", sans-serif;
-  }
-  .slideOutNav ul {
-    list-style: none;
-  }
-  .slideOutNav ul li a {
-    text-decoration: none;
-    color: #fff;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-  }
-  .slideOutNav ul li a:hover, .slideOutNav ul li a:focus {
-    margin-left: 10px;
-    color: rgba(51, 51, 51, 0.5);
   }
 
   .homeHeader .wrapper .headerNavBar {

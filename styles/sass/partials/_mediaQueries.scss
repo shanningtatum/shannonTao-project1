@@ -80,44 +80,69 @@
 @media (max-width:768px){
     // SLIDE OUT NAV
     header .headerNavBar{
+        input[type=checkbox]{
+            opacity:0;
+            position: absolute;
+
+    
+            &:checked ~ .slideOutNav{
+                left:0px;
+            }
+        }
+        .closeMenu{
+            margin-top:20px;
+            color:$white;
+            display:flex;
+            justify-content:flex-end;
+            cursor:pointer;
+            transition:0.3s;
+            &:hover, &:focus{
+                margin-left:10px;
+                color:rgba($color:$lightSage, $alpha:0.5);
+            }       
+        }
+        .slideOutNav{
+
+            .slideMenu{
+                a{
+                    transition: 0.3s;
+                }
+
+            }
+    
+            ul{
+                list-style:none;
+                margin:0;
+
+    
+                li{
+                    a{
+                        text-decoration:none;
+                        color:$white;
+                        transition: 10s;
+    
+                        &:hover, &:focus{
+                            margin-left:10px;
+                            color:rgba($color:$lightSage, $alpha:0.5);
+                        }
+                    }
+                }
+            }
+        }
+
+
+
         #openMenu, .menuButton{
             font-size:1.5rem;
             display:block;
         }
-        input{
-            opacity:0;
-        }
+        
         .menuButton{
             cursor:pointer;
         }
     }
 
-    .slideOutNav{
-        position:absolute;
-        display:block;
-        z-index:10;
-        height:100vh;
-        background-color:$lightSage;
-        padding:20px;
-        width:50%;
-        font-family:$headerFont;
-        ul{
-            list-style:none;
 
-            li{
-                a{
-                    text-decoration:none;
-                    color:$white;
-                    transition:0.3s;
-
-                    &:hover, &:focus{
-                        margin-left:10px;
-                        color:rgba($color:$black, $alpha:0.5);
-                    }
-                }
-            }
-        }
-    }
 
     // HEADER SECTION
     .homeHeader {
