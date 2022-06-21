@@ -265,7 +265,7 @@ section p, footer li {
   font-size: 0.7rem;
   line-height: 24px;
   letter-spacing: 0.3px;
-  color: #333;
+  color: rgba(51, 51, 51, 0.6);
 }
 
 .button {
@@ -329,6 +329,7 @@ img {
 }
 
 .slideOutNav {
+  visibility: hidden;
   position: fixed;
   z-index: 10;
   left: -1000px;
@@ -624,8 +625,13 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 10px;
+  word-wrap: break-word;
+}
+.serviceSection .wrapper ul .serviceList .serviceTextContainer h3 {
+  margin: 10px;
 }
 .serviceSection .wrapper ul .serviceList .serviceTextContainer p {
+  margin: 0;
   color: rgba(51, 51, 51, 0.6);
 }
 
@@ -749,6 +755,124 @@ img {
   background-color: rgba(51, 51, 51, 0.4);
   color: #fff;
   border: 2px #333 solid;
+}
+
+.blogSection .wrapper .blogTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.blogSection .wrapper .blogTitle h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.blogSection .wrapper .blogTitle ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+.blogSection .wrapper .blogTitle ul li {
+  margin-left: 10px;
+}
+.blogSection .wrapper .blogTitle ul a {
+  text-decoration: none;
+  color: rgba(51, 51, 51, 0.6);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.blogSection .wrapper .blogTitle ul a:hover, .blogSection .wrapper .blogTitle ul afocus {
+  color: rgba(195, 218, 183, 0.9);
+}
+.blogSection .wrapper .blogAuthor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px rgba(51, 51, 51, 0.3) solid;
+}
+.blogSection .wrapper .blogAuthor .authorProfile ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  padding: 0;
+}
+.blogSection .wrapper .blogAuthor .authorProfile ul li {
+  margin-right: 30px;
+}
+.blogSection .wrapper .blogAuthor .authorProfile ul li h3, .blogSection .wrapper .blogAuthor .authorProfile ul li p {
+  margin: 0;
+}
+.blogSection .wrapper .blogAuthor .authorProfile ul img {
+  border-radius: 50%;
+}
+.blogSection .wrapper .blogAuthor .blogDate {
+  width: 50%;
+}
+.blogSection .wrapper .blogAuthor .blogDate h3, .blogSection .wrapper .blogAuthor .blogDate p {
+  margin: 0;
+}
+.blogSection .wrapper .blogAuthor .blogDate ul {
+  padding: 0;
+  margin: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+.blogSection .wrapper .blogTextContainer {
+  padding: 40px 0;
+}
+.blogSection .wrapper .blogTextContainer .strongParagraph {
+  font-weight: bold;
+  color: #333;
+}
+.blogSection .wrapper .blogTextContainer .blogSocialLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.blogSection .wrapper .blogTextContainer .blogSocialLinks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.blogSection .wrapper .blogTextContainer .blogSocialLinks ul li {
+  margin: 0 20px;
+}
+.blogSection .wrapper .blogTextContainer .blogSocialLinks ul li a {
+  color: #333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.blogSection .wrapper .blogTextContainer .blogSocialLinks ul li a:hover, .blogSection .wrapper .blogTextContainer .blogSocialLinks ul li a:focus {
+  color: rgba(51, 51, 51, 0.6);
 }
 
 footer {
@@ -922,8 +1046,11 @@ footer li, footer h4 {
     opacity: 0;
     position: absolute;
     font-size: 1.5rem;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .homeHeader .headerNavBar #openMenu:checked ~ .slideOutNav, .blogHeader .blogNavBar #openMenu:checked ~ .slideOutNav {
+    visibility: visible;
     left: 0px;
   }
   .homeHeader .headerNavBar .menuButton, .blogHeader .blogNavBar .menuButton {
@@ -1035,6 +1162,9 @@ footer li, footer h4 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .serviceSection .wrapper ul .serviceList {
     width: 100%;
