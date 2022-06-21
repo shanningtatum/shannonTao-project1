@@ -1,3 +1,5 @@
+// HOME PAGE
+
 .slideOutNav{
     position:fixed;
     z-index:10;
@@ -10,7 +12,7 @@
     transition: 0.3s;
 }
 
-header{
+.homeHeader{
     background-image:url(../assets/home-1.jpeg);
     background-size:cover;
     background-position:center;
@@ -84,7 +86,7 @@ header{
     }
 }
 
-header::after{
+.homeHeader::after{
     position:absolute;
     width:1px;
     height:100px;
@@ -93,4 +95,23 @@ header::after{
     content:("");
     background-color:rgba($color:$black,$alpha:0.5);
 
+}
+
+// BLOG PAGE
+
+.blogHeader{
+    background-image:url('../assets/blog-1.jpeg');
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    position:relative; 
+
+        .blogNavBar {
+        display:flex;
+        justify-content:space-between;
+
+        #openMenu, .menuButton{
+            display:none;
+        }
+    }
 }

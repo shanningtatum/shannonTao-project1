@@ -79,23 +79,47 @@
 
 @media (max-width:768px){
     // SLIDE OUT NAV
-    header .headerNavBar{
-        input[type=checkbox]{
+    .homeHeader .headerNavBar, .blogHeader .blogNavBar{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        border:2px red solid;
+
+        #openMenu {
             opacity:0;
             position: absolute;
+            font-size:1.5rem;
+            // display:block;
     
             &:checked ~ .slideOutNav{
                 left:0px;
             }
+
         }
+
+        .menuButton{
+            margin-top:20px;
+            cursor:pointer;
+            font-size:1.5rem;
+            display:block;
+            transition:0.3s;
+
+            &:hover,&:focus{
+                color:rgba($color:$black,$alpha:0.8);
+            }
+        }
+
         .closeMenu{
-            border:2px red solid;
+            
             margin-top:20px;
             color:$white;
             display:flex;
             justify-content:flex-end;
             cursor:pointer;
             transition:0.3s;
+            z-index:10;
+            left:-1000px;
+
 
             &:hover, &:focus{
                 margin-left:10px;
@@ -103,6 +127,14 @@
             }       
         }
         .slideOutNav{
+
+            #closeMenu{
+                opacity:1;
+                position: absolute;
+                &:checked ~ .slideOutNav{
+                    left:-1000px;
+                }
+            }
 
             .slideMenu{
                 a{
@@ -129,27 +161,16 @@
                 }
             }
         }
-
-
-
-        #openMenu, .menuButton{
-            font-size:1.5rem;
-            display:block;
-        }
-        
-        .menuButton{
-            cursor:pointer;
-        }
     }
 
 
 
     // HEADER SECTION
-    .homeHeader {
+    header {
 
         .wrapper{
 
-            .headerNavBar{
+            nav{
                 border:2px red solid;
                 align-items:center;
 
@@ -203,6 +224,10 @@
 
         }
     }
+
+
+    // BLOG PAGE
+
 
 }
 
