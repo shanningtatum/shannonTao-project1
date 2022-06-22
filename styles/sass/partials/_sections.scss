@@ -455,19 +455,23 @@
 
 // LEAVE A COMMENT START
 .leaveComment form {
-    border:2px red solid;
 
     fieldset{
         display:flex;
+        justify-content:space-between;
         flex-wrap:wrap;
-        border:2px orange solid;
+        border:none;
+        padding:40px 0;
 
         input{
             display:flex;
             flex-grow:1;
             flex-basis:calc((100%/3) - 20px);
             margin-right:20px;
+
         }
+
+        
 
         textarea{
             height:200px;
@@ -483,6 +487,14 @@
             border-bottom:1px rgba($color:$black, $alpha:0.3) solid;
             padding:10px 0;
             outline:none;
+        }
+
+        button {
+            font-family:$headerFont;
+            font-size:0.7rem;
+            border-bottom:1px rgba($color:$black, $alpha:1) solid;
+            padding:10px 0;
+
         }
     }
     

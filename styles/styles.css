@@ -938,16 +938,17 @@ img {
   color: forestgreen;
 }
 
-.leaveComment form {
-  border: 2px red solid;
-}
 .leaveComment form fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border: 2px orange solid;
+  border: none;
+  padding: 40px 0;
 }
 .leaveComment form fieldset input {
   display: -webkit-box;
@@ -976,6 +977,12 @@ img {
   border-bottom: 1px rgba(51, 51, 51, 0.3) solid;
   padding: 10px 0;
   outline: none;
+}
+.leaveComment form fieldset button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  border-bottom: 1px #333333 solid;
+  padding: 10px 0;
 }
 
 footer {
