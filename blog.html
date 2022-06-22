@@ -208,7 +208,9 @@
     <!-- RELATED POSTS START -->
     <section class="relatedPosts">
       <div class="wrapper">
-        <h2>RELATED POSTS</h2>
+        <div class="sectionTitle">
+          <h2>RELATED POSTS</h2>
+        </div>
         <div class="relatedGallery">
           <ul>
             <li>
@@ -246,73 +248,89 @@
     <!-- COMMENT SECTION -->
     <section class="commentSection">
       <div class="wrapper">
-        <h2>02 COMMENTS</h2>
-        <ul>
-          <li>
-            <div class="commentPicture">
-              <img
-                src="./assets/blog-6.jpeg"
-                alt="Daniel Vandaft Profile Picture"
-              />
-            </div>
-            <div class="commentText">
-              <h3>DANIEL VANDAFT - Reply</h3>
-              <p>
-                Ecosystem iPad disruptive social media low hanging fruit stealth
-                launch party handshake market branding.
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="commentPicture">
-              <img
-                src="./assets/blog-7.jpeg"
-                alt="Jenifer Loopz Profile Picture"
-              />
-            </div>
-            <div class="commentText">
-              <h3>JENIFER LOOPZ - Reply</h3>
-              <p>
-                Ecosystem iPad disruptive social media low hanging fruit stealth
-                launch party handshake market branding.
-              </p>
-            </div>
-          </li>
-        </ul>
+        <div class="sectionTitle">
+          <h2>02 COMMENTS</h2>
+        </div>
+        <div class="commentPosts">
+          <ul>
+            <li>
+              <div class="commentPicture">
+                <img
+                  src="./assets/blog-6.jpeg"
+                  alt="Daniel Vandaft Profile Picture"
+                />
+              </div>
+              <div class="commentText">
+                <h3>
+                  DANIEL VANDAFT - <span class="responseType">Reply</span>
+                </h3>
+                <p>
+                  Ecosystem iPad disruptive social media low hanging fruit
+                  stealth launch party handshake market branding.
+                </p>
+                <p class="postDate">July 2022</p>
+              </div>
+            </li>
+            <li>
+              <div class="commentPicture">
+                <img
+                  src="./assets/blog-7.jpeg"
+                  alt="Jenifer Loopz Profile Picture"
+                />
+              </div>
+              <div class="commentText">
+                <h3>JENIFER LOOPZ - <span class="responseType">Reply</span></h3>
+                <p>
+                  Ecosystem iPad disruptive social media low hanging fruit
+                  stealth launch party handshake market branding.
+                </p>
+                <p class="postDate">July 2022</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
+    <!-- LEAVE COMMENT SECTION START -->
     <section class="leaveComment">
       <div class="wrapper">
-        <h2>
-          LEAVE A COMMENT
-          <form action="">
-            <fieldset>
-              <input
-                type="text"
-                id="name"
-                class="name"
-                placeholder="Enter your name..."
-              />
-              <input
-                type="email"
-                id="email"
-                class="email"
-                placeholder="youremail@domain.com"
-              /><input
-                type="text"
-                id="subject"
-                class="subject"
-                placeholder="Subject (Optional)"
-              />
-              <input
-                type="textarea"
-                class="userComment"
-                id="userComment"
-                placeholder="Here goes your comment"
-              /><button type="submit">SUBMIT COMMENT</button>
-            </fieldset>
-          </form>
-        </h2>
+        <div class="sectionTitle">
+          <h2>LEAVE A COMMENT</h2>
+        </div>
+        <form action="">
+          <fieldset>
+            <label for="name" class="sr-only">Enter your name...</label>
+            <input
+              type="text"
+              id="name"
+              class="name"
+              placeholder="Enter your name..."
+            />
+            <label for="email" class="sr-only">Enter your e-mail</label>
+            <input
+              type="email"
+              id="email"
+              class="email"
+              placeholder="youremail@domain.com"
+            />
+            <label for="subject" class="sr-only">Enter the subject line</label>
+            <input
+              type="text"
+              id="subject"
+              class="subject"
+              placeholder="Subject (Optional)"
+            />
+            <label for="userComment" class="sr-only">Enter your message</label>
+            <textarea
+              class="userComment"
+              id="userComment"
+              cols="50"
+              rows="5"
+              placeholder="Here goes your comment"
+            ></textarea>
+            <button type="submit">SUBMIT COMMENT</button>
+          </fieldset>
+        </form>
       </div>
     </section>
     <!-- MAIN ENDS -->

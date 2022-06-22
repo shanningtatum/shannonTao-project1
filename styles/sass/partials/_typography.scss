@@ -38,14 +38,13 @@ h5{
     color:$whiteTwo;
 }
 
-section p, footer li {
+section p, footer li, .blogTitle ul li {
     font-family:$bodyFont;
     font-size:0.7rem;
     line-height:24px;
     letter-spacing:0.3px;
     color:rgba($color:$black, $alpha:0.6);
 }
-
 
 .button {
     text-transform:uppercase;

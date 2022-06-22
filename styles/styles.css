@@ -260,7 +260,7 @@ h5 {
   color: #f6f6f6;
 }
 
-section p, footer li {
+section p, footer li, .blogTitle ul li {
   font-family: "Open Sans", sans-serif;
   font-size: 0.7rem;
   line-height: 24px;
@@ -326,6 +326,14 @@ button {
 
 img {
   width: 100%;
+}
+
+.sectionTitle {
+  border-bottom: 1px rgba(51, 51, 51, 0.3) solid;
+}
+.sectionTitle h2 {
+  font-weight: bolder;
+  font-size: 1.3rem;
 }
 
 .slideOutNav {
@@ -782,7 +790,7 @@ img {
   font-family: "Open Sans", sans-serif;
 }
 .blogSection .wrapper .blogTitle ul li {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 .blogSection .wrapper .blogTitle ul a {
   text-decoration: none;
@@ -873,6 +881,101 @@ img {
 }
 .blogSection .wrapper .blogTextContainer .blogSocialLinks ul li a:hover, .blogSection .wrapper .blogTextContainer .blogSocialLinks ul li a:focus {
   color: rgba(51, 51, 51, 0.6);
+}
+
+.relatedPosts .wrapper .relatedGallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.relatedPosts .wrapper .relatedGallery ul a {
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.commentSection .commentPosts ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+}
+.commentSection .commentPosts ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+}
+.commentSection .commentPosts ul .commentText {
+  background-color: #f6f6f6;
+  width: calc(100% - 40px);
+  margin-left: 40px;
+  padding: 0 20px 20px 20px;
+  position: relative;
+}
+.commentSection .commentPosts ul .commentText::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -5px;
+  background-color: #f6f6f6;
+  -webkit-transform: rotate(30deg) skew(-45deg);
+          transform: rotate(30deg) skew(-45deg);
+  z-index: 100;
+}
+.commentSection .commentPosts ul .responseType {
+  font-style: italic;
+  text-transform: initial;
+  color: forestgreen;
+}
+
+.leaveComment form {
+  border: 2px red solid;
+}
+.leaveComment form fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 2px orange solid;
+}
+.leaveComment form fieldset input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: calc(33.3333333333% - 20px);
+      flex-basis: calc(33.3333333333% - 20px);
+  margin-right: 20px;
+}
+.leaveComment form fieldset textarea {
+  height: 200px;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  resize: none;
+}
+.leaveComment form fieldset input, .leaveComment form fieldset textarea {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.7rem;
+  border: none;
+  border-bottom: 1px rgba(51, 51, 51, 0.3) solid;
+  padding: 10px 0;
+  outline: none;
 }
 
 footer {

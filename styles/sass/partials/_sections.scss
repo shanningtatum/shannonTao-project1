@@ -269,7 +269,7 @@
     }
 }
 
-// BLOG SECTION
+// BLOG SECTION START
 
 .blogSection .wrapper{
 
@@ -290,7 +290,7 @@
             font-family:$bodyFont;
 
             li{
-                margin-left:10px;
+                margin-left:5px;
             }
 
             a{
@@ -301,7 +301,9 @@
                 &:hover,&focus{
                     color:rgba($color:$lightSage, $alpha:0.9);
                 }
+
             }
+
         }
     }
     .blogAuthor{
@@ -309,7 +311,6 @@
         justify-content:space-between;
         align-items:center;
         border-bottom:1px rgba($color:$black, $alpha:0.3) solid;
-        
 
         .authorProfile{
             ul{
@@ -377,4 +378,113 @@
 
         }
     }
+}
+// BLOG SECTION END
+
+// RELATED POSTS START
+
+.relatedPosts{
+    .wrapper{
+        .relatedGallery{
+
+            ul{
+                display:flex;
+                list-style:none;
+                padding:0;
+                justify-content:space-between;
+    
+                a{
+                    text-decoration:none;
+                    font-weight:bolder;
+                }
+            }
+    
+        }
+    
+    }
+    
+}
+
+// RELATED POSTS END
+
+// COMMENT SECTION START
+
+.commentSection{
+
+    .commentPosts{
+        ul{
+            display:flex;
+            flex-direction:column;
+            padding:0;
+
+
+            li{
+                display:flex;
+                padding:20px 0;
+            }
+
+            .commentText{
+                background-color:$whiteTwo;
+                width:calc(100% - 40px);
+                margin-left:40px;
+                padding:0 20px 20px 20px;
+                position:relative;
+
+                &::before{
+                    content:("");
+                    position:absolute;
+                    width:20px;
+                    height:20px;
+                    left:-5px;
+                    background-color:$whiteTwo;
+                    transform:rotate(30deg) skew(-45deg);
+                    z-index:100;
+                }
+            }
+
+            .responseType{
+                font-style:italic;
+                text-transform:initial;
+                color:forestgreen;
+            }
+        }
+    }
+}
+
+// COMMENT SECTION END
+
+// LEAVE A COMMENT START
+.leaveComment form {
+    border:2px red solid;
+
+    fieldset{
+        display:flex;
+        flex-wrap:wrap;
+        border:2px orange solid;
+
+        input{
+            display:flex;
+            flex-grow:1;
+            flex-basis:calc((100%/3) - 20px);
+            margin-right:20px;
+        }
+
+        textarea{
+            height:200px;
+            flex-grow:3;
+            flex-basis:100%;
+            resize:none;
+        }
+
+        input, textarea{
+            font-family:$bodyFont;
+            font-size:0.7rem;
+            border:none;
+            border-bottom:1px rgba($color:$black, $alpha:0.3) solid;
+            padding:10px 0;
+            outline:none;
+        }
+    }
+    
+
 }
