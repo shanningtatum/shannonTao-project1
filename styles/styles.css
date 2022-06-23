@@ -1272,6 +1272,20 @@ footer li, footer h4 {
     display: none;
   }
 
+  .aboutSection .wrapper {
+    padding: 50px;
+  }
+  .aboutSection .wrapper .aboutImageContainer .brandingImage {
+    width: 100%;
+  }
+  .aboutSection .wrapper .aboutImageContainer .circleContainer {
+    left: 10px;
+    top: 10px;
+  }
+  .aboutSection .wrapper .aboutTextContainer .brandContainer, .aboutSection .wrapper .aboutTextContainer .designContainer {
+    width: 45%;
+  }
+
   .gallerySection .wrapper {
     padding: 20px;
   }
@@ -1328,7 +1342,6 @@ footer li, footer h4 {
     margin: 0 auto;
   }
   .serviceSection .wrapper ul {
-    border: 2px blue solid;
     height: 100%;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -1342,7 +1355,6 @@ footer li, footer h4 {
   }
   .serviceSection .wrapper ul .serviceList {
     width: 100%;
-    border: 2px red solid;
   }
   .serviceSection .wrapper ul .serviceList i {
     font-size: 0.7rem;

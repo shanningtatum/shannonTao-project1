@@ -205,6 +205,27 @@
         }
     }
 
+    // ABOUT SECTION
+    .aboutSection{
+        .wrapper{
+            padding:50px;
+            .aboutImageContainer{
+                .brandingImage{
+                    width:100%;
+                }
+                .circleContainer{
+                    left:10px;
+                    top:10px;
+                }
+            }
+            .aboutTextContainer{
+                .brandContainer, .designContainer{
+                    width:45%;
+                }
+            }
+        }
+    }
+
 
 
     // GALLERY SECTION
@@ -280,7 +301,6 @@
             margin:0 auto;
             ul{
 
-                border:2px blue solid;
                 height:100%;
                 flex-wrap:nowrap;
                 flex-direction:column;
@@ -288,7 +308,6 @@
 
                 .serviceList{
                     width:100%;
-                    border:2px red solid;
 
                     i{
                         font-size:0.7rem;
