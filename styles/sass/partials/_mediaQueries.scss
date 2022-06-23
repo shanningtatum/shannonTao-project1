@@ -26,10 +26,6 @@
         .wrapper{
             flex-basis:80%;
             margin:0 auto;
-            .serviceList{
-
-                border:2px red solid;
-            }
         }
     }
 
@@ -60,13 +56,37 @@
             }
         }
     }
+    // BLOG SECTION
 
+    
+    // BLOG PAGE
+    // BLOG TITLE
+    .blogSection .wrapper{
+
+        .blogAuthor{
+
+            .blogDate {
+                width:70%;
+    
+                ul{
+
+                    
+                    li{
+                        width:calc(100%/3);
+                    }
+                }
+            }
+        }
+        
+
+    }
     // FOOTER
 
     .homeFooter{
         padding:0;
         .contactLink{
             padding:0;
+            width:100%;
 
             .contactCol, .recentCol, .twitterCol{
                 padding:0;
@@ -83,7 +103,6 @@
         display:flex;
         justify-content:center;
         align-items:center;
-        border:2px red solid;
 
         #openMenu {
             opacity:0;
@@ -121,7 +140,6 @@
             transition:0.3s;
             z-index:10;
             left:-1000px;
-
 
             &:hover, &:focus{
                 margin-left:10px;
@@ -173,11 +191,9 @@
         .wrapper{
 
             nav{
-                border:2px red solid;
                 align-items:center;
 
                 h1{
-                    border:2px red solid;
                    margin:0 auto;
                    margin-top:20px;
                 }
@@ -203,16 +219,40 @@
 
     }
 
+    //BLOG PAGE
+    // BLOG SECTION
+    .blogSection .wrapper {
+        .blogAuthor{
+            flex-direction:column;
+
+            .blogDate{
+                width:100%;
+                justify-content:space-between;
+  
+                ul{
+                    margin:0;
+                    padding:0;
+                }
+            }
+
+        }
+    }
+
+
+
     // FOOTER
 
     footer .contactLink nav{
         flex-direction:column;
+        align-items:flex-start;
+        margin:0 50px;
 
         .contactCol, .twitterCol, .recentCol{
             text-align:left;
 
         }
         .recentCol{
+            justify-content:flex-start;
             h4{
                 text-align:left;
             }
@@ -226,9 +266,6 @@
 
         }
     }
-
-
-    // BLOG PAGE
 
 
 }
@@ -267,8 +304,38 @@
 
         }
     }
+
+    // LEAVE A COMMENT FORM
+    form {
+        input{
+            width:20px;
+            flex-basis:0;
+        }
+    }
 }
 
 @media (max-width:320px){
+    //BLOG PAGE
+    // BLOG SECTION
+    .blogSection .wrapper {
+        .blogAuthor{
+            flex-direction:column;
 
+            .blogDate{
+                justify-content:space-between;
+  
+                ul{
+                    display:flex;
+                    flex-direction:column;
+                    margin:0;
+                    padding:0;
+
+                    li{
+                        width:100%;
+                    }
+                }
+            }
+
+        }
+    }
 }

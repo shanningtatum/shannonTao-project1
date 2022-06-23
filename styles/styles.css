@@ -777,6 +777,9 @@ img {
 .blogSection .wrapper .blogTitle h2 {
   font-size: 3rem;
   font-weight: bolder;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  line-height: 2.2rem;
 }
 .blogSection .wrapper .blogTitle ul {
   display: -webkit-box;
@@ -787,6 +790,7 @@ img {
           justify-content: flex-start;
   list-style: none;
   padding: 0;
+  margin: 0;
   font-family: "Open Sans", sans-serif;
 }
 .blogSection .wrapper .blogTitle ul li {
@@ -892,10 +896,26 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.relatedPosts .wrapper .relatedGallery ul li {
+  width: calc(33.3333333333% - 20px);
 }
 .relatedPosts .wrapper .relatedGallery ul a {
   text-decoration: none;
   font-weight: bolder;
+}
+.relatedPosts .wrapper .relatedGallery ul a img {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.relatedPosts .wrapper .relatedGallery ul a img:hover, .relatedPosts .wrapper .relatedGallery ul a img:focus {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .commentSection .commentPosts ul {
@@ -938,6 +958,13 @@ img {
   color: forestgreen;
 }
 
+.leaveComment {
+  padding: 20px 0 100px 0;
+}
+.leaveComment form {
+  border: 2px red solid;
+  width: 100%;
+}
 .leaveComment form fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -950,6 +977,9 @@ img {
   border: none;
   padding: 40px 0;
 }
+.leaveComment form fieldset .email {
+  margin: 0 20px;
+}
 .leaveComment form fieldset input {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -959,7 +989,6 @@ img {
           flex-grow: 1;
   -ms-flex-preferred-size: calc(33.3333333333% - 20px);
       flex-basis: calc(33.3333333333% - 20px);
-  margin-right: 20px;
 }
 .leaveComment form fieldset textarea {
   height: 200px;
@@ -969,9 +998,15 @@ img {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   resize: none;
+  margin: 40px 0;
 }
-.leaveComment form fieldset input, .leaveComment form fieldset textarea {
+.leaveComment form fieldset input:hover, .leaveComment form fieldset input:focus, .leaveComment form fieldset textarea:hover, .leaveComment form fieldset textarea:focus {
+  color: #333333;
+  border-bottom: 1px #333 solid;
+}
+.leaveComment form fieldset input, .leaveComment form fieldset textarea, .leaveComment form fieldset button {
   font-family: "Open Sans", sans-serif;
+  color: #333;
   font-size: 0.7rem;
   border: none;
   border-bottom: 1px rgba(51, 51, 51, 0.3) solid;
@@ -980,35 +1015,35 @@ img {
 }
 .leaveComment form fieldset button {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.7rem;
   border-bottom: 1px #333333 solid;
-  padding: 10px 0;
+}
+.leaveComment form fieldset button:hover, .leaveComment form fieldset button:focus {
+  color: rgba(51, 51, 51, 0.7);
+  border-bottom: 1px rgba(51, 51, 51, 0.7) solid;
 }
 
 footer {
   background-color: #333;
   margin: 0;
-  padding-top: 50px;
 }
 footer .contactLink {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 50px 0;
-  border-bottom: 2px rgba(255, 255, 255, 0.1) solid;
+  max-width: 1280px;
+  width: 80%;
+  margin: 0 auto;
 }
 footer .contactLink nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 80%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
-}
-footer .contactLink nav ul {
-  margin: 0 auto;
-  padding: 50px;
+  padding: 50px 0;
 }
 footer .contactLink .socialLinks i {
   margin-right: 20px;
@@ -1027,6 +1062,7 @@ footer .companyFooter {
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   padding: 25px 0;
+  border-top: 2px rgba(255, 255, 255, 0.1) solid;
 }
 footer li, footer h4 {
   color: #f6f6f6;
@@ -1104,9 +1140,6 @@ footer li, footer h4 {
         flex-basis: 80%;
     margin: 0 auto;
   }
-  .serviceSection .wrapper .serviceList {
-    border: 2px red solid;
-  }
 
   .teamSection {
     padding: 10px;
@@ -1128,11 +1161,19 @@ footer li, footer h4 {
         flex-basis: 80%;
   }
 
+  .blogSection .wrapper .blogAuthor .blogDate {
+    width: 70%;
+  }
+  .blogSection .wrapper .blogAuthor .blogDate ul li {
+    width: 33.3333333333%;
+  }
+
   .homeFooter {
     padding: 0;
   }
   .homeFooter .contactLink {
     padding: 0;
+    width: 100%;
   }
   .homeFooter .contactLink .contactCol, .homeFooter .contactLink .recentCol, .homeFooter .contactLink .twitterCol {
     padding: 0;
@@ -1150,7 +1191,6 @@ footer li, footer h4 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    border: 2px red solid;
   }
   .homeHeader .headerNavBar #openMenu, .blogHeader .blogNavBar #openMenu {
     opacity: 0;
@@ -1220,13 +1260,11 @@ footer li, footer h4 {
   }
 
   header .wrapper nav {
-    border: 2px red solid;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   header .wrapper nav h1 {
-    border: 2px red solid;
     margin: 0 auto;
     margin-top: 20px;
   }
@@ -1241,14 +1279,40 @@ footer li, footer h4 {
     width: 40%;
   }
 
-  footer .contactLink nav {
+  .blogSection .wrapper .blogAuthor {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .blogSection .wrapper .blogAuthor .blogDate {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .blogSection .wrapper .blogAuthor .blogDate ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  footer .contactLink nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 0 50px;
+  }
   footer .contactLink nav .contactCol, footer .contactLink nav .twitterCol, footer .contactLink nav .recentCol {
     text-align: left;
+  }
+  footer .contactLink nav .recentCol {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   footer .contactLink nav .recentCol h4 {
     text-align: left;
@@ -1287,5 +1351,38 @@ footer li, footer h4 {
   }
   .serviceSection .wrapper ul .serviceList .serviceTextContainer {
     margin: 0;
+  }
+
+  form input {
+    width: 20px;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+  }
+}
+@media (max-width: 320px) {
+  .blogSection .wrapper .blogAuthor {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogSection .wrapper .blogAuthor .blogDate {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .blogSection .wrapper .blogAuthor .blogDate ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .blogSection .wrapper .blogAuthor .blogDate ul li {
+    width: 100%;
   }
 }
