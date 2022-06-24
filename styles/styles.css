@@ -460,22 +460,6 @@ img {
   display: none;
 }
 
-.contactHeader {
-  position: relative;
-}
-.contactHeader .contactNavBar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #fff;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.contactHeader .contactNavBar #openMenu, .contactHeader .contactNavBar .menuButton {
-  display: none;
-}
-
 .aboutSection {
   background-color: #C3DAB7;
 }
@@ -779,6 +763,112 @@ img {
   border: 2px #333 solid;
 }
 
+.contactHeader {
+  background-color: #fff;
+}
+.contactHeader .contactNavBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contactHeader .contactNavBar #openMenu, .contactHeader .contactNavBar .menuButton {
+  display: none;
+}
+
+.contactMain {
+  padding: 10px;
+  background-image: url("../../../assets/contact-1.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 20vh;
+}
+.contactMain h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  position: relative;
+  top: 25px;
+  line-height: 4rem;
+}
+.contactMain h2::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  top: -30px;
+}
+.contactMain span {
+  display: block;
+}
+
+.contactForm {
+  padding-top: 100px;
+}
+.contactForm .contactLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.contactForm .contactLinks .addressDetails {
+  border-left: 2px red solid;
+  border-right: 2px red solid;
+}
+.contactForm .contactLinks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  position: relative;
+  -ms-flex-preferred-size: 33.3333333333%;
+      flex-basis: 33.3333333333%;
+}
+.contactForm .contactLinks h5 {
+  color: #333;
+  font-weight: bold;
+}
+.contactForm .contactLinks p, .contactForm .contactLinks li, .contactForm .contactLinks h5 {
+  margin: 0;
+  padding: 0;
+}
+.contactForm .contactLinks a {
+  text-decoration: none;
+}
+
+.bottomSection {
+  background-image: url("../../../assets/contact-2.jpeg");
+  background-size: cover;
+  background-position: top;
+  height: 70vh;
+}
+
+.blogHeader {
+  background-image: url("../assets/blog-1.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+.blogHeader .blogNavBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blogHeader .blogNavBar #openMenu, .blogHeader .blogNavBar .menuButton {
+  display: none;
+}
+
 .blogSection .wrapper .blogTitle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1034,13 +1124,6 @@ img {
 .leaveComment form fieldset button:hover, .leaveComment form fieldset button:focus {
   color: rgba(51, 51, 51, 0.7);
   border-bottom: 1px rgba(51, 51, 51, 0.7) solid;
-}
-
-.bottomSection {
-  background-image: url("../../../assets/contact-2.jpeg");
-  background-size: cover;
-  background-position: top;
-  height: 70vh;
 }
 
 footer {
@@ -1314,6 +1397,13 @@ footer li, footer h4 {
     width: 40%;
   }
 
+  .teamSection .wrapper ul li:first-child {
+    padding: 10px;
+  }
+  .teamSection .wrapper ul li:first-child h3 {
+    margin: 10;
+  }
+
   .blogSection .wrapper .blogAuthor {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1409,10 +1499,13 @@ footer li, footer h4 {
     width: 100%;
     margin: 0;
     padding: 20px;
-    border: 2px orange solid;
   }
   .teamSection .wrapper ul li:last-child {
+    padding: 0 20px;
     width: 50%;
+  }
+  .teamSection .wrapper ul li:last-child h3 {
+    margin: auto;
   }
 
   .dropSection .wrapper .dropTextContainer {

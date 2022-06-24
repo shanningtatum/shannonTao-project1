@@ -1,0 +1,85 @@
+// CONTACT PAGE
+// CONTACT HEADER
+.contactHeader{
+    background-color:$white;
+
+
+        .contactNavBar {
+        display:flex;
+        justify-content:space-between;
+
+        #openMenu, .menuButton{
+            display:none;
+        }
+    }
+}
+
+// CONTACT MAIN
+.contactMain{
+    padding:10px;
+    background-image:url('../../../assets/contact-1.jpeg');
+    background-size:cover;
+    background-position:center;
+    height:20vh;
+
+    h2{
+        font-size:3rem;
+        font-weight:bolder;
+        position:relative;
+        top:25px;
+        line-height: 4rem;
+
+        &::before{
+            position: absolute;
+            content:("");
+            width:25px;
+            height:3px;
+            background-color:$black;
+            top:-30px;
+        }
+    }
+    span{
+        display:block;
+    }
+}
+
+.contactForm{
+    padding-top:100px;
+
+    .contactLinks {
+        display:flex;
+        justify-content:space-around;
+        
+        .addressDetails{
+            border-left:2px red solid;
+            border-right:2px red solid;
+        }
+        ul{
+            display:flex;
+            flex-direction:column;
+            list-style:none;
+            position:relative;
+            flex-basis:calc((100%/3));
+
+        }
+        h5{
+            color:$black;
+            font-weight:bold;
+        }
+        p, li, h5{
+            margin:0;
+            padding:0;
+        }
+        a{
+            text-decoration:none;
+        }
+    }
+}
+
+
+.bottomSection{
+    background-image:url('../../../assets/contact-2.jpeg');
+    background-size:cover;
+    background-position:top;
+    height:70vh;
+}
