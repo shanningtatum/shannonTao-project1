@@ -692,7 +692,6 @@ img {
       -ms-flex-positive: 2;
           flex-grow: 2;
   width: calc(33.3333333333% - 20px);
-  margin: 10px;
   padding: 30px;
 }
 .teamSection .wrapper ul li:first-child p {
@@ -706,7 +705,6 @@ img {
       -ms-flex-align: center;
           align-items: center;
   width: calc(25% - 20px);
-  margin: 10px;
   padding: 20px;
   background-color: #f6f6f6;
 }
@@ -1338,6 +1336,17 @@ footer li, footer h4 {
   }
 }
 @media (max-width: 600px) {
+  .gallerySection .wrapper .galleryImageContainer {
+    height: 50%;
+  }
+  .gallerySection .wrapper .galleryImageContainer img {
+    width: 70%;
+  }
+  .gallerySection .wrapper .galleryTextContainer {
+    padding: 0;
+    height: 50%;
+  }
+
   .serviceSection .wrapper {
     margin: 0 auto;
   }
@@ -1365,10 +1374,47 @@ footer li, footer h4 {
     margin: 0;
   }
 
+  .teamSection .wrapper ul {
+    width: 100%;
+  }
+  .teamSection .wrapper ul li {
+    width: 50%;
+    margin: 10px 0;
+    padding: 5px;
+  }
+  .teamSection .wrapper ul li:first-child {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    border: 2px orange solid;
+  }
+  .teamSection .wrapper ul li:last-child {
+    width: 50%;
+  }
+
+  .dropSection .wrapper .dropTextContainer {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .dropSection .wrapper .dropImageContainer {
+    -ms-flex-preferred-size: 0%;
+        flex-basis: 0%;
+  }
+
   form input {
     width: 20px;
     -ms-flex-preferred-size: 0;
         flex-basis: 0;
+  }
+
+  .twitterCol li:nth-child(3) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .twitterCol li button {
+    width: 100%;
   }
 }
 @media (max-width: 320px) {
