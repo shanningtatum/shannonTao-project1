@@ -116,3 +116,20 @@
         }
     }
 }
+
+// CONTACT PAGE
+
+.contactHeader{
+
+    position:relative; 
+
+        .contactNavBar {
+        display:flex;
+        background-color:$white;
+        justify-content:space-between;
+
+        #openMenu, .menuButton{
+            display:none;
+        }
+    }
+}

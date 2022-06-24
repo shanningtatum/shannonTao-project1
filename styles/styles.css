@@ -460,6 +460,22 @@ img {
   display: none;
 }
 
+.contactHeader {
+  position: relative;
+}
+.contactHeader .contactNavBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contactHeader .contactNavBar #openMenu, .contactHeader .contactNavBar .menuButton {
+  display: none;
+}
+
 .aboutSection {
   background-color: #C3DAB7;
 }
@@ -1020,6 +1036,13 @@ img {
   border-bottom: 1px rgba(51, 51, 51, 0.7) solid;
 }
 
+.bottomSection {
+  background-image: url("../../../assets/contact-2.jpeg");
+  background-size: cover;
+  background-position: top;
+  height: 70vh;
+}
+
 footer {
   background-color: #333;
   margin: 0;
@@ -1179,7 +1202,7 @@ footer li, footer h4 {
   }
 }
 @media (max-width: 768px) {
-  .homeHeader .headerNavBar, .blogHeader .blogNavBar {
+  .homeHeader .headerNavBar, .blogHeader .blogNavBar, .contactHeader .contactNavBar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1190,18 +1213,18 @@ footer li, footer h4 {
         -ms-flex-align: center;
             align-items: center;
   }
-  .homeHeader .headerNavBar #openMenu, .blogHeader .blogNavBar #openMenu {
+  .homeHeader .headerNavBar #openMenu, .blogHeader .blogNavBar #openMenu, .contactHeader .contactNavBar #openMenu {
     opacity: 0;
     position: absolute;
     font-size: 1.5rem;
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
-  .homeHeader .headerNavBar #openMenu:checked ~ .slideOutNav, .blogHeader .blogNavBar #openMenu:checked ~ .slideOutNav {
+  .homeHeader .headerNavBar #openMenu:checked ~ .slideOutNav, .blogHeader .blogNavBar #openMenu:checked ~ .slideOutNav, .contactHeader .contactNavBar #openMenu:checked ~ .slideOutNav {
     visibility: visible;
     left: 0px;
   }
-  .homeHeader .headerNavBar .menuButton, .blogHeader .blogNavBar .menuButton {
+  .homeHeader .headerNavBar .menuButton, .blogHeader .blogNavBar .menuButton, .contactHeader .contactNavBar .menuButton {
     margin-top: 20px;
     cursor: pointer;
     font-size: 1.5rem;
@@ -1209,10 +1232,10 @@ footer li, footer h4 {
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
-  .homeHeader .headerNavBar .menuButton:hover, .homeHeader .headerNavBar .menuButton:focus, .blogHeader .blogNavBar .menuButton:hover, .blogHeader .blogNavBar .menuButton:focus {
+  .homeHeader .headerNavBar .menuButton:hover, .homeHeader .headerNavBar .menuButton:focus, .blogHeader .blogNavBar .menuButton:hover, .blogHeader .blogNavBar .menuButton:focus, .contactHeader .contactNavBar .menuButton:hover, .contactHeader .contactNavBar .menuButton:focus {
     color: rgba(51, 51, 51, 0.8);
   }
-  .homeHeader .headerNavBar .closeMenu, .blogHeader .blogNavBar .closeMenu {
+  .homeHeader .headerNavBar .closeMenu, .blogHeader .blogNavBar .closeMenu, .contactHeader .contactNavBar .closeMenu {
     margin-top: 20px;
     color: #fff;
     display: -webkit-box;
@@ -1227,32 +1250,32 @@ footer li, footer h4 {
     z-index: 10;
     left: -1000px;
   }
-  .homeHeader .headerNavBar .closeMenu:hover, .homeHeader .headerNavBar .closeMenu:focus, .blogHeader .blogNavBar .closeMenu:hover, .blogHeader .blogNavBar .closeMenu:focus {
+  .homeHeader .headerNavBar .closeMenu:hover, .homeHeader .headerNavBar .closeMenu:focus, .blogHeader .blogNavBar .closeMenu:hover, .blogHeader .blogNavBar .closeMenu:focus, .contactHeader .contactNavBar .closeMenu:hover, .contactHeader .contactNavBar .closeMenu:focus {
     margin-left: 10px;
     color: rgba(195, 218, 183, 0.5);
   }
-  .homeHeader .headerNavBar .slideOutNav #closeMenu, .blogHeader .blogNavBar .slideOutNav #closeMenu {
+  .homeHeader .headerNavBar .slideOutNav #closeMenu, .blogHeader .blogNavBar .slideOutNav #closeMenu, .contactHeader .contactNavBar .slideOutNav #closeMenu {
     opacity: 1;
     position: absolute;
   }
-  .homeHeader .headerNavBar .slideOutNav #closeMenu:checked ~ .slideOutNav, .blogHeader .blogNavBar .slideOutNav #closeMenu:checked ~ .slideOutNav {
+  .homeHeader .headerNavBar .slideOutNav #closeMenu:checked ~ .slideOutNav, .blogHeader .blogNavBar .slideOutNav #closeMenu:checked ~ .slideOutNav, .contactHeader .contactNavBar .slideOutNav #closeMenu:checked ~ .slideOutNav {
     left: -1000px;
   }
-  .homeHeader .headerNavBar .slideOutNav .slideMenu a, .blogHeader .blogNavBar .slideOutNav .slideMenu a {
+  .homeHeader .headerNavBar .slideOutNav .slideMenu a, .blogHeader .blogNavBar .slideOutNav .slideMenu a, .contactHeader .contactNavBar .slideOutNav .slideMenu a {
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
-  .homeHeader .headerNavBar .slideOutNav ul, .blogHeader .blogNavBar .slideOutNav ul {
+  .homeHeader .headerNavBar .slideOutNav ul, .blogHeader .blogNavBar .slideOutNav ul, .contactHeader .contactNavBar .slideOutNav ul {
     list-style: none;
     margin: 0;
   }
-  .homeHeader .headerNavBar .slideOutNav ul li a, .blogHeader .blogNavBar .slideOutNav ul li a {
+  .homeHeader .headerNavBar .slideOutNav ul li a, .blogHeader .blogNavBar .slideOutNav ul li a, .contactHeader .contactNavBar .slideOutNav ul li a {
     text-decoration: none;
     color: #fff;
     -webkit-transition: 10s;
     transition: 10s;
   }
-  .homeHeader .headerNavBar .slideOutNav ul li a:hover, .homeHeader .headerNavBar .slideOutNav ul li a:focus, .blogHeader .blogNavBar .slideOutNav ul li a:hover, .blogHeader .blogNavBar .slideOutNav ul li a:focus {
+  .homeHeader .headerNavBar .slideOutNav ul li a:hover, .homeHeader .headerNavBar .slideOutNav ul li a:focus, .blogHeader .blogNavBar .slideOutNav ul li a:hover, .blogHeader .blogNavBar .slideOutNav ul li a:focus, .contactHeader .contactNavBar .slideOutNav ul li a:hover, .contactHeader .contactNavBar .slideOutNav ul li a:focus {
     margin-left: 10px;
     color: rgba(195, 218, 183, 0.5);
   }
