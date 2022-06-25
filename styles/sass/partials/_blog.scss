@@ -223,10 +223,10 @@
 .leaveComment {
 
     padding:20px 0 100px 0;
+    width:100%;
 
     form {
-        border:2px red solid;
-        width:100%;
+
         fieldset{
             display:flex;
             justify-content:space-between;
@@ -241,7 +241,6 @@
             input{
                 display:flex;
                 flex-grow:1;
-                flex-basis:calc((100%/3) - 20px);
     
             }
     

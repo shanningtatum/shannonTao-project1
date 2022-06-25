@@ -200,7 +200,7 @@
         .slideOutNav{
 
             #closeMenu{
-                opacity:1;
+                opacity:0;
                 position: absolute;
                 &:checked ~ .slideOutNav{
                     left:-1000px;
@@ -208,7 +208,13 @@
             }
 
             .slideMenu{
+                margin-top:50px;
+
+                li{
+                    margin:20px 0;
+                }
                 a{
+                    font-size:1rem;
                     transition: 0.3s;
                 }
 
@@ -367,12 +373,20 @@
         }
     }
 
+    .bottomSection{
+        height:40vh;
+    }
+
 
 }
 
 @media (max-width:600px){
 
+// SLIDE OUT NAV
 
+.slideOutNav{
+    width:70%;
+}
     // ABOUT SECTION
 
 
@@ -468,14 +482,6 @@
     }
 
 
-    // LEAVE A COMMENT FORM
-    form {
-        input{
-            width:20px;
-            flex-basis:0;
-        }
-    }
-
     // FOOTER{
 
     .twitterCol{
@@ -490,6 +496,18 @@
         }
     
     }
+
+    // FORM FOR BLOG AND CONTACT
+    .leaveComment form{
+        fieldset {
+            flex-direction:column;
+            width:100%;
+            .email{
+                margin:0px;
+            }
+        }
+    } 
+    
 
     // CONTACT PAGE
     .contactForm{
@@ -511,12 +529,11 @@
 
     // CONTACT FORM
 
-    .getInTouchSection{
-        fieldset{
-            display:flex;
-            flex-direction:column;
-        }
+
+    .bottomSection{
+        height:20vh;
     }
+    
 }
 
 @media (max-width:320px){

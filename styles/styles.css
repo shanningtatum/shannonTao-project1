@@ -1082,9 +1082,6 @@ img {
 
 .leaveComment {
   padding: 20px 0 100px 0;
-}
-.leaveComment form {
-  border: 2px red solid;
   width: 100%;
 }
 .leaveComment form fieldset {
@@ -1109,8 +1106,6 @@ img {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  -ms-flex-preferred-size: calc(33.3333333333% - 20px);
-      flex-basis: calc(33.3333333333% - 20px);
 }
 .leaveComment form fieldset textarea {
   height: 200px;
@@ -1398,13 +1393,20 @@ footer li, footer h4 {
     color: rgba(195, 218, 183, 0.5);
   }
   .homeHeader .headerNavBar .slideOutNav #closeMenu, .blogHeader .blogNavBar .slideOutNav #closeMenu, .contactHeader .contactNavBar .slideOutNav #closeMenu {
-    opacity: 1;
+    opacity: 0;
     position: absolute;
   }
   .homeHeader .headerNavBar .slideOutNav #closeMenu:checked ~ .slideOutNav, .blogHeader .blogNavBar .slideOutNav #closeMenu:checked ~ .slideOutNav, .contactHeader .contactNavBar .slideOutNav #closeMenu:checked ~ .slideOutNav {
     left: -1000px;
   }
+  .homeHeader .headerNavBar .slideOutNav .slideMenu, .blogHeader .blogNavBar .slideOutNav .slideMenu, .contactHeader .contactNavBar .slideOutNav .slideMenu {
+    margin-top: 50px;
+  }
+  .homeHeader .headerNavBar .slideOutNav .slideMenu li, .blogHeader .blogNavBar .slideOutNav .slideMenu li, .contactHeader .contactNavBar .slideOutNav .slideMenu li {
+    margin: 20px 0;
+  }
   .homeHeader .headerNavBar .slideOutNav .slideMenu a, .blogHeader .blogNavBar .slideOutNav .slideMenu a, .contactHeader .contactNavBar .slideOutNav .slideMenu a {
+    font-size: 1rem;
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
@@ -1511,8 +1513,16 @@ footer li, footer h4 {
   .contactForm .contactLinks ul {
     white-space: normal;
   }
+
+  .bottomSection {
+    height: 40vh;
+  }
 }
 @media (max-width: 600px) {
+  .slideOutNav {
+    width: 70%;
+  }
+
   .gallerySection .wrapper .galleryImageContainer {
     height: 50%;
   }
@@ -1581,12 +1591,6 @@ footer li, footer h4 {
         flex-basis: 0%;
   }
 
-  form input {
-    width: 20px;
-    -ms-flex-preferred-size: 0;
-        flex-basis: 0;
-  }
-
   .twitterCol li:nth-child(3) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1595,6 +1599,17 @@ footer li, footer h4 {
   }
   .twitterCol li button {
     width: 100%;
+  }
+
+  .leaveComment form fieldset {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .leaveComment form fieldset .email {
+    margin: 0px;
   }
 
   .contactForm .contactLinks {
@@ -1613,14 +1628,8 @@ footer li, footer h4 {
     border: none;
   }
 
-  .getInTouchSection fieldset {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .bottomSection {
+    height: 20vh;
   }
 }
 @media (max-width: 320px) {
