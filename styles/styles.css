@@ -1369,6 +1369,7 @@ footer li, footer h4 {
     display: block;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+    color: #333;
   }
   .homeHeader .headerNavBar .menuButton:hover, .homeHeader .headerNavBar .menuButton:focus, .blogHeader .blogNavBar .menuButton:hover, .blogHeader .blogNavBar .menuButton:focus, .contactHeader .contactNavBar .menuButton:hover, .contactHeader .contactNavBar .menuButton:focus {
     color: rgba(51, 51, 51, 0.8);

@@ -175,6 +175,7 @@
             font-size:1.5rem;
             display:block;
             transition:0.3s;
+            color:$black;
 
             &:hover,&:focus{
                 color:rgba($color:$black,$alpha:0.8);
