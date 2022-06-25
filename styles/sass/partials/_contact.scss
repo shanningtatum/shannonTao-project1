@@ -46,33 +46,57 @@
 .contactForm{
     padding-top:100px;
 
+    h3{
+        font-weight:bold;
+        letter-spacing:0.1rem;
+    }
+
     .contactLinks {
         display:flex;
         justify-content:space-around;
+        li{
+            margin:3px;
+
+            i{
+                font-size:2rem;
+            }
+
+            a{
+                text-decoration:none;
+
+            }
+        }
         
         .addressDetails{
-            border-left:2px red solid;
-            border-right:2px red solid;
+            border-left:2px rgba($color:$black, $alpha:0.2) solid;
+            border-right:2px rgba($color:$black, $alpha:0.2) solid;
         }
         ul{
             display:flex;
+            white-space:nowrap;
             flex-direction:column;
             list-style:none;
-            position:relative;
-            flex-basis:calc((100%/3));
-
+            flex-basis:calc((100%/3) - 100px);
+            margin:50px 0;
+            padding:60px;
         }
+
         h5{
+            margin-bottom:0;
             color:$black;
             font-weight:bold;
         }
-        p, li, h5{
+
+        p, a{
             margin:0;
             padding:0;
+            transition:color 0.3s;
+
+            &:hover, &:focus{
+                color:$black;
+            }
         }
-        a{
-            text-decoration:none;
-        }
+
     }
 }
 

@@ -807,6 +807,10 @@ img {
 .contactForm {
   padding-top: 100px;
 }
+.contactForm h3 {
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
 .contactForm .contactLinks {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -814,33 +818,47 @@ img {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+.contactForm .contactLinks li {
+  margin: 3px;
+}
+.contactForm .contactLinks li i {
+  font-size: 2rem;
+}
+.contactForm .contactLinks li a {
+  text-decoration: none;
+}
 .contactForm .contactLinks .addressDetails {
-  border-left: 2px red solid;
-  border-right: 2px red solid;
+  border-left: 2px rgba(51, 51, 51, 0.2) solid;
+  border-right: 2px rgba(51, 51, 51, 0.2) solid;
 }
 .contactForm .contactLinks ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  white-space: nowrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   list-style: none;
-  position: relative;
-  -ms-flex-preferred-size: 33.3333333333%;
-      flex-basis: 33.3333333333%;
+  -ms-flex-preferred-size: calc(33.3333333333% - 100px);
+      flex-basis: calc(33.3333333333% - 100px);
+  margin: 50px 0;
+  padding: 60px;
 }
 .contactForm .contactLinks h5 {
+  margin-bottom: 0;
   color: #333;
   font-weight: bold;
 }
-.contactForm .contactLinks p, .contactForm .contactLinks li, .contactForm .contactLinks h5 {
+.contactForm .contactLinks p, .contactForm .contactLinks a {
   margin: 0;
   padding: 0;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
-.contactForm .contactLinks a {
-  text-decoration: none;
+.contactForm .contactLinks p:hover, .contactForm .contactLinks p:focus, .contactForm .contactLinks a:hover, .contactForm .contactLinks a:focus {
+  color: #333;
 }
 
 .bottomSection {
@@ -1283,6 +1301,48 @@ footer li, footer h4 {
     padding: 0;
     margin: 20px;
   }
+
+  .contactForm {
+    padding-top: 50px;
+  }
+  .contactForm h3 {
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+  }
+  .contactForm .contactLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .contactForm .contactLinks li {
+    margin: 3px;
+  }
+  .contactForm .contactLinks li i {
+    font-size: 1rem;
+  }
+  .contactForm .contactLinks li a {
+    text-decoration: none;
+  }
+  .contactForm .contactLinks ul {
+    margin: 50px 0;
+    padding: 20px;
+  }
+  .contactForm .contactLinks h5 {
+    margin-bottom: 0;
+    color: #333;
+    font-weight: bold;
+  }
+  .contactForm .contactLinks p, .contactForm .contactLinks a {
+    margin: 0;
+    padding: 0;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+  }
+  .contactForm .contactLinks p:hover, .contactForm .contactLinks p:focus, .contactForm .contactLinks a:hover, .contactForm .contactLinks a:focus {
+    color: #333;
+  }
 }
 @media (max-width: 768px) {
   .homeHeader .headerNavBar, .blogHeader .blogNavBar, .contactHeader .contactNavBar {
@@ -1447,6 +1507,10 @@ footer li, footer h4 {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+
+  .contactForm .contactLinks ul {
+    white-space: normal;
+  }
 }
 @media (max-width: 600px) {
   .gallerySection .wrapper .galleryImageContainer {
@@ -1531,6 +1595,32 @@ footer li, footer h4 {
   }
   .twitterCol li button {
     width: 100%;
+  }
+
+  .contactForm .contactLinks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactForm .contactLinks .addressDetails {
+    border: none;
+  }
+  .contactForm .contactLinks ul {
+    margin: 0;
+  }
+  .contactForm .contactLinks li {
+    border: none;
+  }
+
+  .getInTouchSection fieldset {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 @media (max-width: 320px) {

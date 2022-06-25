@@ -95,6 +95,57 @@
         }
     }
 
+    // CONTACT PAGE
+
+    .contactForm{
+        padding-top:50px;
+
+        h3{
+        font-weight:bold;
+        letter-spacing:0.1rem;
+        }
+
+        .contactLinks {
+            display:flex;
+            justify-content:space-around;
+            li{
+                margin:3px;
+
+                i{
+                    font-size:1rem;
+                }
+
+                a{
+                    text-decoration:none;
+
+                }
+            }
+        
+            ul{
+                margin:50px 0;
+                padding:20px;
+                // flex-basis:calc((100%/3) - 100px);
+            }
+
+            h5{
+                margin-bottom:0;
+                color:$black;
+                font-weight:bold;
+            }
+
+            p, a{
+                margin:0;
+                padding:0;
+                transition:color 0.3s;
+
+                &:hover, &:focus{
+                    color:$black;
+                }
+            }
+
+        }
+    }
+
 }
 
 @media (max-width:768px){
@@ -306,6 +357,16 @@
         }
     }
 
+    // CONTACT SECTION
+
+    .contactForm{
+        .contactLinks{
+            ul{
+                white-space:normal;
+            }
+        }
+    }
+
 
 }
 
@@ -415,20 +476,47 @@
         }
     }
 
-        // FOOTER{
+    // FOOTER{
 
-            .twitterCol{
-                li{
-                    &:nth-child(3){
-                        flex-direction:column;
-                    }
-    
-                    button{
-                        width:100%;
-                    }
-                }
-    
+    .twitterCol{
+        li{
+             &:nth-child(3){
+                flex-direction:column;
             }
+    
+            button{
+                width:100%;
+            }
+        }
+    
+    }
+
+    // CONTACT PAGE
+    .contactForm{
+        
+        .contactLinks{
+            flex-direction:column;
+
+            .addressDetails{
+                border:none;
+            }
+            ul{
+                margin:0;
+            }
+            li{
+                border:none;
+            }
+        }
+    }
+
+    // CONTACT FORM
+
+    .getInTouchSection{
+        fieldset{
+            display:flex;
+            flex-direction:column;
+        }
+    }
 }
 
 @media (max-width:320px){
@@ -458,3 +546,4 @@
 
 
 }
+
