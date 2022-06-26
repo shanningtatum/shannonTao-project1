@@ -1524,6 +1524,27 @@ footer li, footer h4 {
     width: 70%;
   }
 
+  .aboutSection .wrapper {
+    padding: 40px;
+  }
+  .aboutSection .wrapper .aboutImageContainer {
+    padding: 0;
+  }
+  .aboutSection .wrapper .aboutImageContainer .circleContainer {
+    left: -20px;
+    top: -20px;
+  }
+  .aboutSection .wrapper .aboutTextContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutSection .wrapper .aboutTextContainer .brandContainer, .aboutSection .wrapper .aboutTextContainer .designContainer {
+    margin: 0;
+    width: 100%;
+  }
+
   .gallerySection .wrapper .galleryImageContainer {
     height: 50%;
   }

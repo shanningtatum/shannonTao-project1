@@ -389,7 +389,25 @@
     width:70%;
 }
     // ABOUT SECTION
-
+    .aboutSection{
+        .wrapper{
+            padding:40px;
+            .aboutImageContainer{
+                padding:0;
+                .circleContainer{
+                    left:-20px;
+                    top:-20px;
+                }
+            }
+            .aboutTextContainer{
+                flex-direction:column;
+                .brandContainer,.designContainer{
+                    margin:0;
+                    width:100%;
+                }
+            }
+        }
+    }
 
     // GALLERY SECTION
 
