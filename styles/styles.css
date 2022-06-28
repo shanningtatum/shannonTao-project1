@@ -1691,6 +1691,16 @@ footer li, footer h4 {
             hyphens: auto;
     width: 50%;
   }
+
+  .contactMain {
+    padding: 1px;
+  }
+  .contactMain .wrapper {
+    width: 80%;
+  }
+  .contactMain .wrapper h2 {
+    font-size: 2.5rem;
+  }
 }
 @media (max-width: 320px) {
   .blogSection .wrapper .blogTitle ul li {

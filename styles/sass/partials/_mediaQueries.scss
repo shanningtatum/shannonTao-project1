@@ -582,11 +582,26 @@
 }
 
 @media (max-width:400px){
+    // BLOG PAGE
     .blogSection .wrapper{
         .blogTitle h2{
             font-size:2.5rem;
             hyphens:auto;
             width:50%;
+        }
+    }
+
+    // CONTACT PAGE
+
+    .contactMain {
+        padding:1px;
+        .wrapper{
+
+            h2{
+                font-size:2.5rem;
+            }
+            width:80%;
+            // margin:0;
         }
     }
 
