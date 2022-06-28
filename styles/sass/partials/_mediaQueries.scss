@@ -526,6 +526,32 @@
             }
         }
     } 
+
+    //BLOG PAGE
+    // BLOG SECTION
+    .blogSection .wrapper {
+        width:90%;
+
+        .blogAuthor{
+            flex-direction:column;
+
+            .blogDate{
+                justify-content:space-between;
+  
+                ul{
+                    display:flex;
+                    flex-direction:column;
+                    margin:0;
+                    padding:0;
+
+                    li{
+                        width:100%;
+                    }
+                }
+            }
+
+        }
+    }
     
 
     // CONTACT PAGE
@@ -555,28 +581,27 @@
     
 }
 
+@media (max-width:400px){
+    .blogSection .wrapper{
+        .blogTitle h2{
+            font-size:2.5rem;
+            hyphens:auto;
+            width:50%;
+        }
+    }
+
+}
+
 @media (max-width:320px){
-    //BLOG PAGE
-    // BLOG SECTION
-    .blogSection .wrapper {
-        .blogAuthor{
-            flex-direction:column;
+    .blogSection .wrapper{
+        .blogTitle{
 
-            .blogDate{
-                justify-content:space-between;
-  
-                ul{
-                    display:flex;
-                    flex-direction:column;
+            ul{
+                li{
                     margin:0;
-                    padding:0;
-
-                    li{
-                        width:100%;
-                    }
                 }
             }
-
+    
         }
     }
 
