@@ -1574,6 +1574,10 @@ footer li, footer h4 {
     width: 100%;
   }
 
+  .serviceSection .wrapper ul .serviceList {
+    padding: 10px;
+  }
+
   .gallerySection .wrapper .galleryImageContainer {
     height: 50%;
   }
