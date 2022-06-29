@@ -196,6 +196,7 @@
 
                 &:last-child{
                     display:flex;
+                    justify-content:center;
                     align-items:center;
                     width:calc((100% / 4) - 20px);
                     padding:20px;
