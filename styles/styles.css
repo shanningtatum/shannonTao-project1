@@ -1718,6 +1718,15 @@ footer li, footer h4 {
   }
 }
 @media (max-width: 320px) {
+  .serviceSection .wrapper {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin: 0 auto;
+  }
+  .serviceSection .wrapper ul .serviceList {
+    padding: 0;
+  }
+
   .blogSection .wrapper .blogTitle ul li {
     margin: 0;
   }

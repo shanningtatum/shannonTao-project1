@@ -618,6 +618,18 @@
 }
 
 @media (max-width:320px){
+    // SERVICES SECTION
+    .serviceSection{
+        .wrapper{
+            flex-basis:100%;
+            margin:0 auto;
+            ul{
+                .serviceList{
+                    padding:0;
+                }
+            }
+        }
+    }
     // blog PAGE
     // blog title
     .blogSection .wrapper{
