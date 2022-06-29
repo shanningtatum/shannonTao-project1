@@ -22,6 +22,7 @@
 .blogSection .wrapper{
 
     .blogTitle{
+        padding:50px 0;
         display:flex;
         flex-direction:column;
 
@@ -273,6 +274,7 @@
     
             button {
                 font-family:$headerFont;
+                font-weight:bold;
                 border-bottom:1px rgba($color:$black, $alpha:1) solid;
                 &:hover, &:focus{
                     color:rgba($color:$black, $alpha:0.7);

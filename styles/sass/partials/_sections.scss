@@ -110,21 +110,19 @@
     .wrapper{
         margin-right:0;
         display:flex;
-        flex-basis:50%;
+        flex-basis:55%;
         ul{
             list-style:none;
             display:flex;
-            flex-direction:row;
             padding:0;
-            height:max-content;
             align-content:center;
             flex-wrap:wrap;
             margin:auto 0;
 
             .serviceList{
                 display:flex;
-                flex-direction:row;
-                width:50%;
+                width:calc((100% / 2) - 40px);
+                padding:20px;
 
                 .iconContainer{
                     display:flex;
