@@ -293,6 +293,33 @@
 
     }
 
+    // SERVICES SECTION 
+    .serviceSection{
+        .wrapper{
+            margin:0 auto;
+            ul{
+
+                height:100%;
+                flex-wrap:nowrap;
+                flex-direction:column;
+                justify-content:center;
+
+                .serviceList{
+                    width:100%;
+
+                    i{
+                        font-size:0.7rem;
+                        width:30px;
+                        height:30px;
+                    }
+                    .serviceTextContainer{
+                        margin:0;
+                    }
+                }
+            }
+        }
+    }
+
     // MEET OUR TEAM SECTION
     .teamSection {
         .wrapper{
@@ -414,32 +441,6 @@
         }
     }
 
-    // SERVICES SECTION 
-    .serviceSection{
-        .wrapper{
-            margin:0 auto;
-            ul{
-
-                height:100%;
-                flex-wrap:nowrap;
-                flex-direction:column;
-                justify-content:center;
-
-                .serviceList{
-                    width:100%;
-
-                    i{
-                        font-size:0.7rem;
-                        width:30px;
-                        height:30px;
-                    }
-                    .serviceTextContainer{
-                        margin:0;
-                    }
-                }
-            }
-        }
-    }
 
     // TEAM SECTION
 
@@ -565,6 +566,21 @@
 }
 
 @media (max-width:400px){
+    // HOME PAGE
+
+    // SERVICES SECTION
+    .serviceSection{
+        .wrapper{
+            flex-basis:80%;
+            margin:0 auto;
+            ul{
+                .serviceList{
+                    padding:0;
+                }
+            }
+        }
+    }
+
     // BLOG PAGE
     .blogSection .wrapper{
         .blogTitle h2{
