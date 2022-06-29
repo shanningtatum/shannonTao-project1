@@ -21,7 +21,6 @@
     }
 
     // SERVICES SECTION
-
     .serviceSection{
         .wrapper{
             flex-basis:80%;
@@ -30,7 +29,6 @@
     }
 
     // TEAM SECTION
-
     .teamSection {
         padding:10px;
         .wrapper{
@@ -48,7 +46,6 @@
     }
 
     // DROP SECTION
-
     .dropSection{
         .wrapper{
             .dropTextContainer{
@@ -56,11 +53,9 @@
             }
         }
     }
-    // BLOG SECTION
-
     
     // BLOG PAGE
-    // BLOG TITLE
+    // BLOG SECTION
     .blogSection .wrapper{
 
         .blogAuthor{
@@ -149,7 +144,8 @@
 }
 
 @media (max-width:768px){
-    // SLIDE OUT NAV
+
+    // HEADER
     .homeHeader .headerNavBar, .blogHeader .blogNavBar, .contactHeader .contactNavBar{
         display:flex;
         justify-content:center;
@@ -166,9 +162,9 @@
                 visibility:visible;
                 left:0px;
             }
-
         }
 
+        // HAMBURGER MENU
         .menuButton{
             margin-top:20px;
             cursor:pointer;
@@ -182,8 +178,8 @@
             }
         }
 
+        // CLOSE MENU BUTTON
         .closeMenu{
-            
             margin-top:20px;
             color:$white;
             display:flex;
@@ -198,6 +194,8 @@
                 color:rgba($color:$lightSage, $alpha:0.5);
             }       
         }
+
+        // SLIDE OUT NAV
         .slideOutNav{
 
             #closeMenu{
@@ -241,13 +239,9 @@
         }
     }
 
-
-
     // HEADER SECTION
     header {
-
         .wrapper{
-
             nav{
                 align-items:center;
 
@@ -284,8 +278,6 @@
         }
     }
 
-
-
     // GALLERY SECTION
     .gallerySection .wrapper{
         padding:20px;
@@ -297,8 +289,8 @@
         }
 
     }
-    // MEET OUR TEAM SECTION
 
+    // MEET OUR TEAM SECTION
     .teamSection {
         .wrapper{
 
@@ -335,10 +327,7 @@
         }
     }
 
-
-
     // FOOTER
-
     footer .contactLink nav{
         flex-direction:column;
         align-items:flex-start;
@@ -365,7 +354,6 @@
     }
 
     // CONTACT SECTION
-
     .contactForm{
         .contactLinks{
             ul{
@@ -377,17 +365,15 @@
     .bottomSection{
         height:40vh;
     }
-
-
 }
 
 @media (max-width:600px){
 
-// SLIDE OUT NAV
+    // SLIDE OUT NAV
+    .slideOutNav{
+        width:70%;
+    }
 
-.slideOutNav{
-    width:70%;
-}
     // ABOUT SECTION
     .aboutSection{
         .wrapper{
@@ -410,7 +396,6 @@
     }
 
     // GALLERY SECTION
-
     .gallerySection{
         .wrapper{
             .galleryImageContainer{
@@ -425,6 +410,7 @@
             }
         }
     }
+
     // SERVICES SECTION 
     .serviceSection{
         .wrapper{
@@ -448,9 +434,7 @@
                         margin:0;
                     }
                 }
-                
             }
-
         }
     }
 
@@ -459,6 +443,7 @@
     .teamSection {
         
         .wrapper{
+
             ul{
                 width:100%;
 
@@ -500,9 +485,7 @@
 
     }
 
-
-    // FOOTER{
-
+    // FOOTER
     .twitterCol{
         li{
              &:nth-child(3){
@@ -552,7 +535,6 @@
 
         }
     }
-    
 
     // CONTACT PAGE
     .contactForm{
@@ -572,13 +554,11 @@
         }
     }
 
-    // CONTACT FORM
-
-
+    // BACKGROUND IMAGE
     .bottomSection{
         height:20vh;
     }
-    
+
 }
 
 @media (max-width:400px){
@@ -608,6 +588,8 @@
 }
 
 @media (max-width:320px){
+    // blog PAGE
+    // blog title
     .blogSection .wrapper{
         .blogTitle{
 
@@ -619,7 +601,13 @@
     
         }
     }
-
-
+    // comment section
+    .commentSection{
+        .commentPosts ul{
+            .commentText{
+                margin-left:20px;
+            }
+        }
+    }
 }
 
