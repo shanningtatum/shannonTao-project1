@@ -581,6 +581,7 @@
 
     // SERVICES SECTION
     .serviceSection{
+        height:auto;
         .wrapper{
             flex-basis:80%;
             margin:0 auto;
@@ -620,6 +621,7 @@
 @media (max-width:320px){
     // SERVICES SECTION
     .serviceSection{
+        height:auto;
         .wrapper{
             flex-basis:100%;
             margin:0 auto;

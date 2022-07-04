@@ -1690,6 +1690,9 @@ footer li, footer h4 {
   }
 }
 @media (max-width: 400px) {
+  .serviceSection {
+    height: auto;
+  }
   .serviceSection .wrapper {
     -ms-flex-preferred-size: 80%;
         flex-basis: 80%;
@@ -1718,6 +1721,9 @@ footer li, footer h4 {
   }
 }
 @media (max-width: 320px) {
+  .serviceSection {
+    height: auto;
+  }
   .serviceSection .wrapper {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
