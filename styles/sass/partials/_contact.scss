@@ -92,10 +92,6 @@
             padding:0;
             transition:color 0.3s;
 
-            
-        }
-
-        a{
             &:hover, &:focus{
                 color:$black;
             }

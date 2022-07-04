@@ -854,7 +854,7 @@ img {
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
-.contactForm .contactLinks a:hover, .contactForm .contactLinks a:focus {
+.contactForm .contactLinks p:hover, .contactForm .contactLinks p:focus, .contactForm .contactLinks a:hover, .contactForm .contactLinks a:focus {
   color: #333;
 }
 
