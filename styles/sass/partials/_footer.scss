@@ -37,11 +37,23 @@ footer{
         font-family:$bodyFont;
         text-transform:uppercase;
         padding:25px 0;
-        border-top:2px rgba($color:$white,$alpha:0.1) solid;
+        // border-top:2px rgba($color:$white,$alpha:0.1) solid;
     }
 
     li, h4{
         color:$whiteTwo;
+    }
+}
+
+.footerToTop{
+    background-color:rgba($color:$lightSage, $alpha:0.5);
+    text-align:center;
+    
+    a{
+        color:$white;
+        text-decoration:none;
+        font-family:$headerFont;
+        text-transform:uppercase;
     }
 }
 
