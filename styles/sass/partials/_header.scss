@@ -11,7 +11,14 @@
     width:50%;
     font-family:$headerFont;
     transition: 0.3s;
+
 }
+
+.active{
+    visibility:visible;
+    left:0px;
+}
+
 
 .homeHeader{
     background-image:url(../assets/home-1.jpeg);
@@ -22,6 +29,7 @@
 
 
     .headerNavBar {
+        // background-color:black;
         display:flex;
         justify-content:space-between;
 
@@ -29,6 +37,19 @@
             display:none;
         }
     }
+
+    .headerNavBar.active{
+        max-width:1280px;
+        background-color:red;
+        z-index:10;
+        position:fixed;
+        width:80%;
+        
+    }
+
+    // .active{
+    //     // background-color:red;
+    // }
 }
 
 .skip-link{

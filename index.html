@@ -25,22 +25,32 @@
     <header class="homeHeader">
       <div class="wrapper">
         <nav class="headerNavBar">
-          <input type="checkbox" id="openMenu" />
+          <i
+            class="fa-solid fa-bars menuButton"
+            id="menuButton"
+            aria-hidden="true"
+          >
+            <span class="sr-only">Open Navigation Menu</span>
+          </i>
+          <!-- <input type="checkbox" id="openMenu" />
           <label for="openMenu" class="menuButton">
-            <i class="fa-solid fa-bars" aria-hidden="true">
-              <span class="sr-only">Open Navigation Menu</span>
-            </i>
-          </label>
+
+          </label> -->
 
           <!-- SLIDE OUT NAV -->
           <div class="slideOutNav">
             <div class="wrapper">
-              <input type="checkbox" id="closeMenu" />
+              <i
+                class="fa-solid fa-xmark closeMenu"
+                id="closeMenu"
+                aria-hidden="true"
+              >
+                <span class="sr-only">Close Navigation Menu</span>
+              </i>
+              <!-- <input type="checkbox" id="closeMenu" />
               <label for="openMenu" class="closeMenu">
-                <i class="fa-solid fa-xmark" aria-hidden="true">
-                  <span class="sr-only">Close Navigation Menu</span>
-                </i>
-              </label>
+
+              </label> -->
               <nav>
                 <ul class="slideMenu">
                   <li>
@@ -154,16 +164,26 @@
       <section class="gallerySection">
         <div class="wrapper">
           <div class="galleryImageContainer">
-            <button>
+            <button class="prevImage" id="prevImage">
               <i class="fa-solid fa-angle-left" aria-hidden="true"
                 ><span class="sr-only">Click for previous image</span></i
               >
             </button>
-            <img
-              src="/assets/home-3.jpeg"
-              alt="A magazine spread with a text and a picture of a model."
-            />
-            <button>
+            <div class="carouselContainer">
+              <img
+                src="/assets/home-3.jpeg"
+                alt="A magazine spread with a text and a picture of a model."
+              />
+              <img
+                src="/assets/home-4.jpeg"
+                alt="A magazine spread with a text and a picture of a model."
+              />
+              <img
+                src="/assets/home-5.jpeg"
+                alt="A magazine spread with a text and a picture of a model."
+              />
+            </div>
+            <button class="nextImage" id="nextImage">
               <i class="fa-solid fa-angle-right" aria-hidden="true"
                 ><span class="sr-only">Click for next image</span></i
               >
@@ -387,5 +407,7 @@
       </div>
     </footer>
     <!-- FOOTER ENDS -->
+
+    <script src="script.js"></script>
   </body>
 </html>
