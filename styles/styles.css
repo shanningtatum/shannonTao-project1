@@ -379,6 +379,7 @@ img {
   position: relative;
 }
 .homeHeader .headerNavBar {
+  height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -403,9 +404,10 @@ img {
   background-color: red;
   z-index: 10;
   position: fixed;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   left: 0;
-  top: 0;
+  right: 0;
 }
 
 .skip-link {
@@ -1425,7 +1427,6 @@ footer li, footer h4 {
     left: 0px;
   }
   .homeHeader .headerNavBar .menuButton, .blogHeader .blogNavBar .menuButton, .contactHeader .contactNavBar .menuButton {
-    margin-top: 20px;
     cursor: pointer;
     font-size: 1.5rem;
     display: block;
@@ -1437,7 +1438,6 @@ footer li, footer h4 {
     color: rgba(51, 51, 51, 0.8);
   }
   .homeHeader .headerNavBar .closeMenu, .blogHeader .blogNavBar .closeMenu, .contactHeader .contactNavBar .closeMenu {
-    margin-top: 20px;
     color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1488,7 +1488,6 @@ footer li, footer h4 {
   }
   header .wrapper nav h1 {
     margin: 0 auto;
-    margin-top: 20px;
   }
   header .wrapper nav .leftNav, header .wrapper nav .rightNav {
     display: none;

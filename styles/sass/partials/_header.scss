@@ -29,6 +29,7 @@
 
 
     .headerNavBar {
+        height:10vh;
         // background-color:black;
         display:flex;
         justify-content:space-between;
@@ -49,15 +50,16 @@
     }
 
     .headerNavBar.active{
+
         max-width:1280px;
         background-color:red;
         z-index:10;
         position:fixed;
-        width:100%;
+        width:80%;
         // padding:0 200px;
-        // margin:0 auto;
+        margin:0 auto;
         left:0;
-        top:0;
+        right:0;
         
     }
 
