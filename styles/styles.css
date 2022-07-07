@@ -234,6 +234,8 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: 1.85rem;
   letter-spacing: 0.9px;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 h2 {
@@ -338,7 +340,7 @@ img {
 }
 
 .scrollToTop {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.6);
   display: none;
   position: fixed;
   bottom: 30px;
@@ -349,13 +351,13 @@ img {
   transition: color 0.3s;
 }
 .scrollToTop:hover, .scrollToTop:focus {
-  color: #333333;
+  color: black;
 }
 
 .slideOutNav {
   visibility: hidden;
   position: fixed;
-  z-index: 10;
+  z-index: 200;
   left: -1000px;
   top: 0;
   height: 100vh;
@@ -390,22 +392,26 @@ img {
 .homeHeader .headerNavBar #openMenu, .homeHeader .headerNavBar .menuButton {
   display: none;
 }
-.homeHeader .wrapper.active {
-  position: relative;
-  border: 2px red solid;
+
+.wrapper.active {
+  height: 10vh;
+  position: fixed;
   z-index: 100;
-  background-color: red;
-  max-width: 1280px;
-  margin: auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  max-width: none;
   width: 100%;
 }
-.homeHeader .headerNavBar.active {
-  max-width: 1280px;
-  background-color: red;
+
+.headerNavBar.active, .blogNavBar.active, .contactNavBar.active {
   z-index: 10;
   position: fixed;
   width: 80%;
+  -ms-flex-item-align: center;
+      align-self: center;
   margin: 0 auto;
+  top: 0;
   left: 0;
   right: 0;
 }
@@ -816,6 +822,7 @@ img {
   background-color: #fff;
 }
 .contactHeader .contactNavBar {
+  height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -925,6 +932,7 @@ img {
   position: relative;
 }
 .blogHeader .blogNavBar {
+  height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1122,7 +1130,7 @@ img {
   background-color: #f6f6f6;
   -webkit-transform: rotate(30deg) skew(-45deg);
           transform: rotate(30deg) skew(-45deg);
-  z-index: 100;
+  z-index: 10;
 }
 .commentSection .commentPosts ul .responseType {
   font-style: italic;
@@ -1438,6 +1446,7 @@ footer li, footer h4 {
     color: rgba(51, 51, 51, 0.8);
   }
   .homeHeader .headerNavBar .closeMenu, .blogHeader .blogNavBar .closeMenu, .contactHeader .contactNavBar .closeMenu {
+    margin-top: 40px;
     color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;

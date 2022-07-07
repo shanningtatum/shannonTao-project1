@@ -53,7 +53,7 @@ img{
 }
 
 .scrollToTop{
-    color:rgba($color:black, $alpha:0.8);
+    color:rgba($color:black, $alpha:0.6);
     // border:2px white solid;  
     display:none;                                                           
     position:fixed;
@@ -64,6 +64,6 @@ img{
     transition:color 0.3s;      
 
     &:hover, &:focus{
-        color:rgba($color:$black, $alpha:1);
+        color:rgba($color:black, $alpha:1);
     }
 }
