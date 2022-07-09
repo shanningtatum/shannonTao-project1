@@ -39,7 +39,6 @@ formEl.addEventListener("submit", function (e) {
   e.preventDefault();
 
   // create Date
-
   const date = new Date();
   const day = date.getDate();
   const year = date.getFullYear();
@@ -57,11 +56,13 @@ formEl.addEventListener("submit", function (e) {
     "November",
     "December",
   ];
+  // store the data the user is posting the comment
   const postDate = `${months[month]}  ${day}  ${year}`;
 
   // store user name
   const userNameInput = document.querySelector("#name");
   const userName = userNameInput.value;
+
   // store user comment
   const userCommentInput = document.querySelector("#userComment");
   const userComment = userCommentInput.value;
@@ -75,7 +76,7 @@ formEl.addEventListener("submit", function (e) {
     // creates div class with default pfp
     listEl.innerHTML = `<div class="commentPicture"><img src="./assets/blog-8.png" alt="Default User Profile Picture"/>`;
 
-    // create div
+    // create div element
     const divEl = document.createElement("div");
     divEl.classList.add("commentText");
 
@@ -104,6 +105,7 @@ formEl.addEventListener("submit", function (e) {
     divEl.append(paragraphEl);
     divEl.append(dateParagraphEl);
 
+    // clear the userName and userComment input fields
     userNameInput.value = "";
     userCommentInput.value = "";
 
@@ -116,10 +118,16 @@ formEl.addEventListener("submit", function (e) {
   }
 });
 
-// PSEUDO CODE
+// PSEUDO CODE FOR NAV BAR
+// create function for
+
+// PSEUDO CODE FOR COMMENT SECTION
 // create event Listener for submit button
 // create li element when submitted, create a div with comment picture (inner HTML)
 // create another div with .commentText class
+// store variables for username, usermessage, and date user is posting
+// create h3 element for username, create paragraph for usermessage and paragraph for date user is posting
+// append the above three elements to the .commentText class
 
 /* <h3>
 ${userName} - <span class="responseType">Reply</span>
@@ -128,15 +136,5 @@ ${userName} - <span class="responseType">Reply</span>
 ${userComment}
 </p>
 <p class="postDate">${date}</p> */
-
-// nextImage.addEventListener("click", function () {
-//   console.log("next image pressed");
-// });
-
-// prevImage.addEventListener("click", function () {
-//   console.log("prev image pressed");
-// });
-
-// console.log(headerWrapper);
 
 // carousel if possible

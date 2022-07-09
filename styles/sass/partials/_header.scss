@@ -37,11 +37,15 @@
         #openMenu, .menuButton{
             display:none;
         }
+
+       
     }
     // .active{
     //     // background-color:red;
     // }
 }
+
+
 
 .wrapper.active{
     height:10vh;
@@ -99,26 +103,42 @@
     }
 }
 
-.rightNav li{
-    &:last-child i  {
-        position:relative;
+.rightNav {
+    // .search{
+    //     position:relative;
+    
+    //     .searchIcon{
+    //         position: absolute;
+    //     }
+    
+    //     .searchField{
+    //         position:absolute;
+    //     }
+    // }
 
-        p{
-            display:flex;
-            position:absolute;
-            bottom:-20px;
-            right:-10px;
-            font-size:0.5rem;
-            color:$black;
-            background-color:$lightSage;
-            width:18px;
-            height:18px;
-            border-radius:50%;
-            justify-content:center;
-            align-items:center;
+    li{
+        &:last-child i  {
+            position:relative;
+    
+            p{
+                display:flex;
+                position:absolute;
+                bottom:-20px;
+                right:-10px;
+                font-size:0.5rem;
+                color:$black;
+                background-color:$lightSage;
+                width:18px;
+                height:18px;
+                border-radius:50%;
+                justify-content:center;
+                align-items:center;
+            }
         }
     }
 }
+
+
 
 .homeHeader::after{
     position:absolute;
