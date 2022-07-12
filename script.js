@@ -120,24 +120,7 @@ const setupEventListener = () => {
   });
 };
 
-// active class
-const path = window.location.href;
-const navLink = document.querySelectorAll("header a");
-
-// console.log(navLink);
-// console.log(path);
-
-// navLink.forEach(function () {
-//   console.log(navLink.href);
-// });
-
-// PSEUDO CODE FOR SEARCH BAR
-// users click the search icon
-// search input displays behind it
-// select search icon and add an event listener for when it is clicked
-
-// PSEUDO CODE FOR NAV BAR
-
+setupEventListener();
 // PSEUDO CODE FOR COMMENT SECTION
 // create event Listener for submit button
 // create li element when submitted, create a div with comment picture (inner HTML)
@@ -145,13 +128,3 @@ const navLink = document.querySelectorAll("header a");
 // store variables for username, usermessage, and date user is posting
 // create h3 element for username, create paragraph for usermessage and paragraph for date user is posting
 // append the above three elements to the .commentText class
-
-/* <h3>
-${userName} - <span class="responseType">Reply</span>
-</h3>
-<p>
-${userComment}
-</p>
-<p class="postDate">${date}</p> */
-
-// carousel if possible
