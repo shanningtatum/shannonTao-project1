@@ -104,17 +104,6 @@
 }
 
 .rightNav {
-    // .search{
-    //     position:relative;
-    
-    //     .searchIcon{
-    //         position: absolute;
-    //     }
-    
-    //     .searchField{
-    //         position:absolute;
-    //     }
-    // }
 
     li{
         &:last-child i  {
@@ -137,7 +126,6 @@
         }
     }
 }
-
 
 
 .homeHeader::after{
@@ -170,4 +158,8 @@
     }
 }
 
+.activePage{
+    text-decoration:line-through !important;
+    color:red;
+}
 

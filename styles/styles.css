@@ -223,6 +223,7 @@ template {
 
 html {
   font-size: 125%;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5 {
@@ -507,6 +508,11 @@ img {
   display: none;
 }
 
+.activePage {
+  text-decoration: line-through !important;
+  color: red;
+}
+
 .aboutSection {
   background-color: #C3DAB7;
 }
@@ -583,7 +589,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px red solid;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -611,7 +616,6 @@ img {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  border: 2px orange solid;
   width: 100%;
 }
 .gallerySection .wrapper .carouselContainer img {
@@ -1316,11 +1320,9 @@ footer li, footer h4 {
     left: 0;
     top: 0;
   }
-
   .gallerySection .wrapper .galleryImageContainer img {
     width: 60%;
   }
-
   .serviceSection .wrapper {
     -ms-flex-preferred-size: 80%;
         flex-basis: 80%;
@@ -1329,7 +1331,6 @@ footer li, footer h4 {
   .serviceSection .wrapper .serviceList {
     padding: 0;
   }
-
   .teamSection {
     padding: 10px;
   }
@@ -1344,19 +1345,16 @@ footer li, footer h4 {
   .teamSection .wrapper ul {
     padding: 20px 0;
   }
-
   .dropSection .wrapper .dropTextContainer {
     -ms-flex-preferred-size: 80%;
         flex-basis: 80%;
   }
-
   .blogSection .wrapper .blogAuthor .blogDate {
     width: 70%;
   }
   .blogSection .wrapper .blogAuthor .blogDate ul li {
     width: 33.3333333333%;
   }
-
   .homeFooter {
     padding: 0;
   }
@@ -1368,7 +1366,6 @@ footer li, footer h4 {
     padding: 0;
     margin: 20px;
   }
-
   .contactForm {
     padding-top: 50px;
   }
@@ -1489,7 +1486,6 @@ footer li, footer h4 {
     margin-left: 10px;
     color: rgba(195, 218, 183, 0.5);
   }
-
   header .wrapper nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1501,7 +1497,6 @@ footer li, footer h4 {
   header .wrapper nav .leftNav, header .wrapper nav .rightNav {
     display: none;
   }
-
   .aboutSection .wrapper {
     padding: 50px;
   }
@@ -1515,14 +1510,12 @@ footer li, footer h4 {
   .aboutSection .wrapper .aboutTextContainer .brandContainer, .aboutSection .wrapper .aboutTextContainer .designContainer {
     width: 45%;
   }
-
   .gallerySection .wrapper {
     padding: 20px;
   }
   .gallerySection .wrapper .galleryImageContainer img {
     width: 40%;
   }
-
   .serviceSection .wrapper {
     margin: 0 auto;
   }
@@ -1549,14 +1542,12 @@ footer li, footer h4 {
   .serviceSection .wrapper ul .serviceList .serviceTextContainer {
     margin: 0;
   }
-
   .teamSection .wrapper ul li:first-child {
     padding: 10px;
   }
   .teamSection .wrapper ul li:first-child h3 {
     margin: 10;
   }
-
   .blogSection .wrapper .blogAuthor {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1573,7 +1564,6 @@ footer li, footer h4 {
     margin: 0;
     padding: 0;
   }
-
   footer .contactLink nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1600,11 +1590,9 @@ footer li, footer h4 {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-
   .contactForm .contactLinks ul {
     white-space: normal;
   }
-
   .bottomSection {
     height: 40vh;
   }
@@ -1613,7 +1601,6 @@ footer li, footer h4 {
   .slideOutNav {
     width: 70%;
   }
-
   .aboutSection .wrapper {
     padding: 40px;
   }
@@ -1634,11 +1621,9 @@ footer li, footer h4 {
     margin: 0;
     width: 100%;
   }
-
   .serviceSection .wrapper ul .serviceList {
     padding: 10px;
   }
-
   .gallerySection .wrapper .galleryImageContainer {
     height: 50%;
   }
@@ -1649,7 +1634,6 @@ footer li, footer h4 {
     padding: 0;
     height: 50%;
   }
-
   .teamSection .wrapper ul {
     width: 100%;
   }
@@ -1670,7 +1654,6 @@ footer li, footer h4 {
   .teamSection .wrapper ul li:last-child h3 {
     margin: auto;
   }
-
   .dropSection .wrapper .dropTextContainer {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -1679,7 +1662,6 @@ footer li, footer h4 {
     -ms-flex-preferred-size: 0%;
         flex-basis: 0%;
   }
-
   .twitterCol li:nth-child(3) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1689,7 +1671,6 @@ footer li, footer h4 {
   .twitterCol li button {
     width: 100%;
   }
-
   .leaveComment form fieldset {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1700,7 +1681,6 @@ footer li, footer h4 {
   .leaveComment form fieldset .email {
     margin: 0px;
   }
-
   .blogSection .wrapper {
     width: 90%;
   }
@@ -1729,7 +1709,6 @@ footer li, footer h4 {
   .blogSection .wrapper .blogAuthor .blogDate ul li {
     width: 100%;
   }
-
   .contactForm .contactLinks {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1745,7 +1724,6 @@ footer li, footer h4 {
   .contactForm .contactLinks li {
     border: none;
   }
-
   .bottomSection {
     height: 20vh;
   }
@@ -1762,7 +1740,6 @@ footer li, footer h4 {
   .serviceSection .wrapper ul .serviceList {
     padding: 0;
   }
-
   .blogSection .wrapper .blogTitle h2 {
     font-size: 2.5rem;
     -webkit-hyphens: auto;
@@ -1770,7 +1747,6 @@ footer li, footer h4 {
             hyphens: auto;
     width: 50%;
   }
-
   .contactMain {
     padding: 1px;
   }
@@ -1793,11 +1769,9 @@ footer li, footer h4 {
   .serviceSection .wrapper ul .serviceList {
     padding: 0;
   }
-
   .blogSection .wrapper .blogTitle ul li {
     margin: 0;
   }
-
   .commentSection .commentPosts ul .commentText {
     margin-left: 20px;
   }
