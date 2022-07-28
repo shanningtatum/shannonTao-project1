@@ -170,7 +170,7 @@
 
         // HAMBURGER MENU
         .menuButton{
-            margin-top:20px;
+            // margin-top:20px;
             cursor:pointer;
             font-size:1.5rem;
             display:block;
@@ -184,7 +184,7 @@
 
         // CLOSE MENU BUTTON
         .closeMenu{
-            margin-top:20px;
+            margin-top:40px;
             color:$white;
             display:flex;
             justify-content:flex-end;
@@ -202,13 +202,13 @@
         // SLIDE OUT NAV
         .slideOutNav{
 
-            #closeMenu{
-                opacity:0;
-                position: absolute;
-                &:checked ~ .slideOutNav{
-                    left:-1000px;
-                }
-            }
+            // #closeMenu{
+            //     opacity:0;
+            //     position: absolute;
+            //     &:checked ~ .slideOutNav{
+            //         left:-1000px;
+            //     }
+            // }
 
             .slideMenu{
                 margin-top:50px;
@@ -251,7 +251,7 @@
 
                 h1{
                    margin:0 auto;
-                   margin-top:20px;
+                //    margin-top:20px;
                 }
                 .leftNav, .rightNav{
                     display:none;

@@ -21,27 +21,38 @@
     <!-- SKIP NAV -->
     <a href="#mainContent" class="skip-link">Skip to Main Content</a>
 
+    <!-- SCROLL TO TOP ARROW -->
+    <i class="fa-solid fa-circle-arrow-up scrollToTop"></i>
+
     <!-- HEADER -->
     <header class="blogHeader">
       <div class="wrapper">
         <nav class="blogNavBar">
-          <input type="checkbox" id="openMenu" />
+          <i
+            class="fa-solid fa-bars menuButton"
+            id="menuButton"
+            aria-hidden="true"
+          >
+            <span class="sr-only">Open Navigation Menu</span>
+          </i>
+          <!-- <input type="checkbox" id="openMenu" />
           <label for="openMenu" class="menuButton">
             <i class="fa-solid fa-bars" aria-hidden="true"
               ><span class="sr-only">Open Navigation Menu</span></i
             >
-          </label>
+          </label> -->
 
           <!-- SLIDE OUT NAV -->
 
           <div class="slideOutNav">
             <div class="wrapper">
-              <input type="checkbox" id="closeMenu" />
-              <label for="openMenu" class="closeMenu"
-                ><i class="fa-solid fa-xmark" aria-hidden="true"
-                  ><span class="sr-only">Close Navigation Menu</span></i
-                ></label
+              <i
+                class="fa-solid fa-xmark closeMenu"
+                id="closeMenu"
+                aria-hidden="true"
               >
+                <span class="sr-only">Close Navigation Menu</span>
+              </i>
               <nav>
                 <ul class="slideMenu">
                   <li><a href="./index.html">Home</a></li>
@@ -62,7 +73,7 @@
               <a href="./index.html">Home</a>
             </li>
             <li>
-              <a href="./blog.html">Blog</a>
+              <a href="./blog.html" class="activePage">Blog</a>
             </li>
             <li>
               <a href="#">Portfolio</a>
@@ -314,6 +325,7 @@
                 id="name"
                 class="name"
                 placeholder="Enter your name..."
+                required
               />
               <label for="email" class="sr-only">Enter your e-mail</label>
               <input
@@ -341,6 +353,7 @@
                 cols="25"
                 rows="5"
                 placeholder="Here goes your comment"
+                required
               ></textarea>
               <button type="submit">SUBMIT COMMENT</button>
             </fieldset>
@@ -413,10 +426,15 @@
           </ul>
         </nav>
       </div>
+      <div class="footerToTop">
+        <a href="#" class="footerToTopLink">Scroll To Top</a>
+      </div>
       <div class="companyFooter">
         <h5>Creative Agency</h5>
       </div>
     </footer>
     <!-- FOOTER ENDS -->
+
+    <script src="script.js"></script>
   </body>
 </html>

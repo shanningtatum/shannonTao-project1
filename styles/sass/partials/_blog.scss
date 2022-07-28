@@ -8,6 +8,7 @@
     position:relative; 
 
         .blogNavBar {
+        height:10vh;
         display:flex;
         justify-content:space-between;
 
@@ -205,8 +206,9 @@
                     left:-5px;
                     background-color:$whiteTwo;
                     transform:rotate(30deg) skew(-45deg);
-                    z-index:100;
+                    z-index:10;
                 }
+                
             }
 
             .responseType{

@@ -21,6 +21,9 @@
     <!-- SKIP NAV -->
     <a href="#mainContent" class="skip-link">Skip to Main Content</a>
 
+    <!-- SCROLL TO TOP ARROW -->
+    <i class="fa-solid fa-circle-arrow-up scrollToTop"></i>
+
     <!-- HEADER -->
     <header class="contactHeader">
       <div class="wrapper">
@@ -36,12 +39,13 @@
 
           <div class="slideOutNav">
             <div class="wrapper">
-              <input type="checkbox" id="closeMenu" />
-              <label for="openMenu" class="closeMenu">
-                <i class="fa-solid fa-xmark" aria-hidden="true">
-                  <span class="sr-only">Close Navigation Menu</span>
-                </i>
-              </label>
+              <i
+                class="fa-solid fa-xmark closeMenu"
+                id="closeMenu"
+                aria-hidden="true"
+              >
+                <span class="sr-only">Close Navigation Menu</span>
+              </i>
               <nav>
                 <ul class="slideMenu">
                   <li>
@@ -88,7 +92,7 @@
               <a href="#">Shop</a>
             </li>
             <li>
-              <a href="./contact.html">Contact</a>
+              <a href="./contact.html" class="activePage">Contact</a>
             </li>
             <li>
               <button>
@@ -301,5 +305,7 @@
       </div>
     </footer>
     <!-- FOOTER ENDS -->
+
+    <script src="script.js"></script>
   </body>
 </html>
